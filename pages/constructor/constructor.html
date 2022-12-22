@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор форм</title>
+    <link rel="icon" href="../../images/Slice3.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap flex flex-jc-fe flex-ai-c">
+                <div class="header__phone-number">
+                    <p>8 (800) 201-06-19</p>
+                </div>
+                <div class="header__social-media">
+                    <a href="https://www.instagram.com" target="_blank"><img src="../../images/Instagram.png"
+                            alt=""></a>
+                    <a href="https://telegram.org" target="_blank"><img src="../../images/telegram.png" alt=""></a>
+                    <a href="https://www.facebook.com" target="_blank"><img
+                            src="../../images/akar-icons_facebook-fill.png" alt=""></a>
+                    <a href="https://vk.com" target="_blank"><img src="../../images/vkImg.png" alt=""></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../../images/Youtube.png" alt=""></a>
+                </div>
+                <div class="header__logo">
+                    <p><a href="../../index.html">zeon wear</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="constructor">
+        <div class="container">
+            <div class="constructor__wrap flex">
+                <div class="filters special__filters">
+                    <div class="categories__wrap">
+                        <div class="filter__title">
+                            <span class="category__title">Категория</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="categories show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="t-shirt">
+                                <label for="t-shirt"></label>
+                                <span>Футболка</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="shorts">
+                                <label for="shorts"></label>
+                                <span>Шорты</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="tricot">
+                                <label for="tricot"></label>
+                                <span>Трико</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="shoes">
+                                <label for="shoes"></label>
+                                <span>Обувь</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="sportswear">
+                                <label for="sportswear"></label>
+                                <span>Спортивка</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="headwear">
+                                <label for="headwear"></label>
+                                <span>Головной убор</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sports__wrap">
+                        <div class="filter__title">
+                            <span class="sports__title">Виды спорта</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="sports show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="football">
+                                <label for="football"></label>
+                                <span>Футбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="mini-football">
+                                <label for="mini-football"></label>
+                                <span>Мини-футбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="volleyball">
+                                <label for="volleyball"></label>
+                                <span>Волейбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="athletics">
+                                <label for="athletics"></label>
+                                <span>Легкая атлетика</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="handball">
+                                <label for="handball"></label>
+                                <span>Гандбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="fitness">
+                                <label for="fitness"></label>
+                                <span>Фитнес</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="rugby">
+                                <label for="rugby"></label>
+                                <span>Регби</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" name="" id="yoga">
+                                <label for="yoga"></label>
+                                <span>Йога</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brand__wrap">
+                        <div class="filter__title">
+                            <span class="brand__title">Бренд</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="brand input-label__wrap show-div">
+                            <input type="text" id="search">
+                            <label for="search" id="search__label">Я ищу...</label>
+                        </div>
+                    </div>
+
+                    <div class="price__wrap">
+                        <div class="filter__title">
+                            <span class="price__title">Цена</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="price show-div">
+                            <div class="input-label__wrap price-input__wrap">
+                                <input type="number" id="price1">
+                                <label for="price1" id="price1__label">От</label>
+                                <span id="price1__span"></span>
+                            </div>
+                            <div class="input-label__wrap price-input__wrap">
+                                <input type="number" id="price2">
+                                <label for="price2" id="price2__label">До</label>
+                                <span id="price2__span"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="size__wrap">
+                        <div class="filter__title">
+                            <span class="size__title">Размер</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="size show-div">
+                            <div class="size-country__wrap">
+                                <button>EU</button>
+                                <button>US</button>
+                                <button>JP</button>
+                                <button>RU</button>
+                            </div>
+                            <div class="size-value__wrap">
+                                <button>38</button>
+                                <button>39</button>
+                                <button>40</button>
+                                <button>40,5</button>
+                                <button>41</button>
+                                <button>42</button>
+                                <button>42,5</button>
+                                <button>43</button>
+                                <button>43,5</button>
+                                <button>44</button>
+                                <button>44,5</button>
+                                <button>45</button>
+                                <button>46</button>
+                                <button>47</button>
+                            </div>
+                            <a href="#" class="modal-btn">Таблица размеров</a>
+                        </div>
+                    </div>
+
+                    <div class="material__wrap">
+                        <div class="filter__title">
+                            <span class="material__title">Материал</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="material show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="faux-leather">
+                                <label for="faux-leather"></label>
+                                <span>Искусственная кожа</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="natural-suede">
+                                <label for="natural-suede"></label>
+                                <span>Натуральная замша</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="leather">
+                                <label for="leather"></label>
+                                <span>Натуральная кожа</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="natural-nubuck">
+                                <label for="natural-nubuck"></label>
+                                <span>Натуральный нубук</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="nubuck">
+                                <label for="nubuck"></label>
+                                <span>Нубук</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="polyurethane">
+                                <label for="polyurethane"></label>
+                                <span>Полиуретан</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color__wrap">
+                        <div class="filter__title">
+                            <span class="color__title">Цвет</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="color show-div">
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="constructor__section__wrap flex">
+                    <div class="constructor__carousel__main__wrap">
+                        <div class="constructor__carousel__header">
+                            <h5>Конструктор форм</h5>
+                            <p>
+                                <a href="../../index.html">Главная /</a>
+                                <a href="#">Конструктор форм</a>
+                            </p>
+                        </div>
+                        <div class="constructor__carousel__wrap">
+                            <div class="constructor-f-carousel__carousel__wrap flex flex-fd-c flex-jc-c flex-ai-c">
+                                <div class="constructor-f-carousel__carousel flex flex-ai-c">
+                                    <button class="constructor-f-carousel__carousel__prevBtn"></button>
+                                    <ul class="constructor-f-carousel__carousel__list flex flex-jc-c">
+                                        <li class="constructor-f-carousel__carousel__item" data-pos="0"></li>
+                                        <li class="constructor-f-carousel__carousel__item" data-pos="1"></li>
+                                        <li class="constructor-f-carousel__carousel__item" data-pos="2"></li>
+                                        <li class="constructor-f-carousel__carousel__item" data-pos="3"></li>
+                                        <li class="constructor-f-carousel__carousel__item" data-pos="4"></li>
+                                    </ul>
+                                    <button class="constructor-f-carousel__carousel__nextBtn"></button>
+                                </div>
+                            </div>
+
+                            <div class="constructor-s-carousel__carousel__wrap flex flex-fd-c flex-jc-c flex-ai-c">
+                                <div class="constructor-s-carousel__carousel flex flex-ai-c">
+                                    <button class="constructor-s-carousel__carousel__prevBtn"></button>
+                                    <ul class="constructor-s-carousel__carousel__list flex flex-jc-c">
+                                        <li class="constructor-s-carousel__carousel__item" data-pos="0"></li>
+                                        <li class="constructor-s-carousel__carousel__item" data-pos="1"></li>
+                                        <li class="constructor-s-carousel__carousel__item" data-pos="2"></li>
+                                        <li class="constructor-s-carousel__carousel__item" data-pos="3"></li>
+                                        <li class="constructor-s-carousel__carousel__item" data-pos="4"></li>
+                                    </ul>
+                                    <button class="constructor-s-carousel__carousel__nextBtn"></button>
+                                </div>
+                            </div>
+
+                            <div class="constructor-t-carousel__carousel__wrap flex flex-fd-c flex-jc-c flex-ai-c">
+                                <div class="constructor-t-carousel__carousel flex flex-ai-c">
+                                    <button class="constructor-t-carousel__carousel__prevBtn"></button>
+                                    <ul class="constructor-t-carousel__carousel__list flex flex-jc-c">
+                                        <li class="constructor-t-carousel__carousel__item" data-pos="0"></li>
+                                        <li class="constructor-t-carousel__carousel__item" data-pos="1"></li>
+                                        <li class="constructor-t-carousel__carousel__item" data-pos="2"></li>
+                                        <li class="constructor-t-carousel__carousel__item" data-pos="3"></li>
+                                        <li class="constructor-t-carousel__carousel__item" data-pos="4"></li>
+                                    </ul>
+                                    <button class="constructor-t-carousel__carousel__nextBtn"></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="constructor__carousel__text__wrap">
+                        <div class="constructor__carousel__text flex flex-fd-c">
+                            <h4>Футболка</h4>
+                            <div class="constructor__carousel__f-text flex flex-jc-sb flex-ai-c">
+                                <h6>Championship VI</h6>
+                                <p>Цена:</p>
+                            </div>
+                            <div class="constructor__carousel__s-text flex flex-jc-sb flex-ai-c">
+                                <p>400392.100</p>
+                                <h5>1 600 ₽</h5>
+                            </div>
+                        </div>
+                        <div class="constructor__carousel__text flex flex-fd-c">
+                            <h4>ШОРТЫ</h4>
+                            <div class="constructor__carousel__f-text flex flex-jc-sb flex-ai-c">
+                                <h6>Nobel</h6>
+                                <p>Цена:</p>
+                            </div>
+                            <div class="constructor__carousel__s-text flex flex-jc-sb flex-ai-c">
+                                <p>400392.100</p>
+                                <h5>1 200 ₽</h5>
+                            </div>
+                        </div>
+                        <div class="constructor__carousel__text flex flex-fd-c">
+                            <h4>ГЕТРЫ</h4>
+                            <div class="constructor__carousel__f-text flex flex-jc-sb flex-ai-c">
+                                <h6>Professional II</h6>
+                                <p>Цена:</p>
+                            </div>
+                            <div class="constructor__carousel__s-text flex flex-jc-sb flex-ai-c">
+                                <p>400392.100</p>
+                                <h5>950 ₽</h5>
+                            </div>
+                        </div>
+                        <div class="constructor__carousel__input-range">
+                            <h4>Количество комплектов</h4>
+
+                            <p><span></span></p>
+
+                            <div class="range_main">
+                                <input type="range" min="1" max="100" id="range_input">
+                                <div id="range_selector"><button class="range_selectBtn"></button></div>
+                                <div class="range_beforeBtn"></div>
+                            </div>
+
+
+                        </div>
+                        <div></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap flex ">
+                <div class="footer-contacts__wrap">
+                    <div>8 (800) 201-06-19</div>
+                    <div>mail@example.com</div>
+                    <div>
+                        <a href="https://www.instagram.com" target="_blank"><img src="../../images/Instagram.png"
+                                alt=""></a>
+                        <a href="https://telegram.org" target="_blank"><img src="../../images/telegram.png" alt=""></a>
+                        <a href="https://www.youtube.com" target="_blank"><img src="../../images/Youtube.png"
+                                alt=""></a>
+                        <a href="https://vk.com" target="_blank"><img src="../../images/vkImg.png" alt=""></a>
+                        <a href="https://www.facebook.com" target="_blank"><img
+                                src="../../images/akar-icons_facebook-fill.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h6>zeon wear</h6>
+                        <p>by zeon</p>
+                    </div>
+                </div>
+                <div class="footer-partners__wrap">
+                    <div>Стать партнером</div>
+                    <div>Арендодателям</div>
+                    <div>Подключиться к партнерской
+                        программе “Маркетплейс”</div>
+                </div>
+                <div class="footer-about__wrap">
+                    <div>О нас</div>
+                    <div>Помощь</div>
+                    <div>Способы оплаты</div>
+                    <div>Доставка</div>
+                </div>
+                <div class="footer-developers__wrap">
+                    <div>Разработка сайтов и мобильных приложений</div>
+                    <a href="#">www.zeon.ltd 2022</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./constructor.js"></script>
+
+</body>
+
+</html>

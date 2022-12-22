@@ -1,0 +1,52 @@
+.header {
+    padding: 4px 0px 0 6px;
+
+    &__wrap {
+        height: 77px;
+    }
+
+    &__phone-number {
+        padding: 6px 32px;
+        height: 37px;
+        border-right: 1px solid #CDDAF1;
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+
+    &__social-media {
+        padding: 4px 31px;
+        height: 37px;
+        border-right: 1px solid #CDDAF1;
+
+        a {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 11.5px;
+            }
+        }
+    }
+
+    &__logo {
+        padding: 0 2px 0 33px;
+
+        p a {
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 575;
+            font-size: 30px;
+            line-height: 37px;
+            color: #000000;
+
+        }
+    }
+}
+

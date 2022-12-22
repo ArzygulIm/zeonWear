@@ -1,0 +1,111 @@
+.footer {
+    padding: 0 0 25px 0;
+
+    &__wrap {
+        padding: 48px 0px 48px 64px;
+        gap: 124px;
+        width: 1856px;
+        height: 315px;
+        background: #FFFFFF;
+        border-radius: 24px;
+    }
+
+    &-contacts__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 31px;
+        width: 245.44px;
+        height: 219px;
+
+        div {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #171717;
+
+            &:nth-child(3){
+                display: flex;
+                column-gap: 16px;
+            }
+            &:last-child{
+                margin: -2px 0 0 0;
+            }
+            img{
+                height: 32px;
+                width: 32px;
+
+            }
+            img:not(:last-child) {
+                margin: 2px 10.5px 0 0;
+            }
+
+            h6 {
+                font-weight: 575;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+                color: #171717;
+            }
+        }
+    }
+
+    &-partners__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 18.5px;
+        width: 222px;
+        height: 108px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #171717;
+    }
+    &-about__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 18.5px;
+        width: 122px;
+        height: 108px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #171717;
+    }
+
+
+
+    &-developers__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+
+        div {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #8B96B1;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #032D80;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@keyframes eye {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        transform: scaleY(0.1);
+    }
+}

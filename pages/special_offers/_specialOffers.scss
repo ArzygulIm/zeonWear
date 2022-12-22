@@ -1,0 +1,81 @@
+.checkbox__wrap label {
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox__wrap label:after {
+    top: 2px;
+    left: 1px;
+}
+
+#special-offers {
+    padding: 0 0 24px;
+}
+
+.special-offers__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-offers__main__wrap {
+    width: 1496px;
+    display: flex;
+    flex-direction: column;
+}
+
+.special__filters {
+    height: 1560px;
+}
+
+.special-offers__header {
+    width: 1496px;
+    height: 218px;
+    /* mix-blend-mode: color; */
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 149px 0 64px;
+    background-image: url("../../images/specialOffersHeader.png");
+    background-blend-mode: color;
+    margin-bottom: 24px;
+}
+
+.special-offers__header__back {
+    background: #242424;
+    mix-blend-mode: color;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.special-offers__header p {
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.special-offers__header div span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0.355em;
+    text-transform: uppercase;
+    color: #2F2E2C;
+}
+
+.special-offers__header div h2 {
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 125%;
+    letter-spacing: 0.82em;
+    text-transform: uppercase;
+    color: #2F2E2C;
+}

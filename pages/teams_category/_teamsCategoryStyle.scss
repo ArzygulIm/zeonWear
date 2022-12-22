@@ -1,0 +1,43 @@
+.teams-category {
+    padding-bottom: 24px;
+
+    .filters{
+        height: 1440px;
+    }
+    &__header {
+        width: 1496px;
+        height: 218px;
+        background-image: url("../../images/categoryTeamsHeader.png");
+        position: relative;
+
+
+
+        &__back {
+            background: #242424;
+            mix-blend-mode: color;
+            border-radius: 16px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 125%;
+            letter-spacing: 0.355em;
+            text-transform: uppercase;
+            color: #6B6B6B;
+            width: 265px;
+            margin-right: 226px;
+        }
+    }
+
+    &__main__wrap{
+        row-gap: 24px;
+    }
+
+}

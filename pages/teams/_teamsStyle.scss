@@ -1,0 +1,55 @@
+.teams {
+    &__wrap {
+        column-gap: 12px;
+    }
+
+    &__box {
+        width: 610.67px;
+        height: 811px;
+        position: relative;
+
+        h5 {
+            position: absolute;
+            left: 54px;
+            bottom: 43px;
+            width: 315px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 125%;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #FFFFFF, -2px -2px #FFFFFF, -2px 2px #FFFFFF, 2px -2px #FFFFFF;
+        }
+
+        &:first-child {
+            background-image: url("../../images/teams1.png");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../../images/teams3.png");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../../images/teams2.png");
+        }
+
+        &__back {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            border-radius: 24px;
+            background: #242424;
+            mix-blend-mode: color;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(255, 24, 24, 0.99);
+                mix-blend-mode: color-burn;
+            }
+        }
+
+    }
+}

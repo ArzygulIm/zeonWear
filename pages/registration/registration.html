@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="icon" href="../../images/Slice3.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap flex flex-jc-fe flex-ai-c">
+                <div class="header__phone-number">
+                    <p>8 (800) 201-06-19</p>
+                </div>
+                <div class="header__social-media">
+                    <a href="https://www.instagram.com" target="_blank"><img src="../../images/Instagram.png"
+                            alt=""></a>
+                    <a href="https://telegram.org" target="_blank"><img src="../../images/telegram.png" alt=""></a>
+                    <a href="https://www.facebook.com" target="_blank"><img
+                            src="../../images/akar-icons_facebook-fill.png" alt=""></a>
+                    <a href="https://vk.com" target="_blank"><img src="../../images/vkImg.png" alt=""></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../../images/Youtube.png" alt=""></a>
+                </div>
+                <div class="header__logo">
+                    <p><a href="../../index.html">zeon wear</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="reg">
+        <div class="container">
+            <div class="reg__wrap">
+                <div class="auth__reg__backdrop"></div>
+                <div class="logo reg__logo">
+                    <h2>zeon wear</h2>
+                    <p>by zeon</p>
+                </div>
+                <form action="#" class="reg__form">
+                    <div class="reg-form__header">
+                        <h2>Регистрация</h2>
+                        <div class="flex__div">
+                            <p>Есть аккаунт?</p>
+                            <a href="../authorization/authorization.html">Войти</a>
+                        </div>
+                    </div>
+                    <div class="reg-form__wrap">
+                        <div class="flex flex-jc-sb">
+                            <div class="input-label__wrap reg-name">
+                                <input id="reg-name" type="text">
+                                <label for="reg-name" id="reg-name__label">
+                                    Имя*
+                                </label>
+                            </div>
+                            <div class="flex__div child-flex__div">
+                                <div class="gender__wrap">
+                                    <div class="gender__title">
+                                        <p id="gender">Пол</p>
+                                        <img src="../../images/Polygon2.png" alt="">
+                                    </div>
+                                    <div class="gender__title second-gender__title">Пол</div>
+                                    <div class="gender">
+                                        <p class="genders">Мужской</p>
+                                        <p class="genders">Женский</p>
+                                    </div>
+
+                                </div>
+                                <div class="input-label__wrap city__wrap">
+                                    <input type="text" id="city">
+                                    <label for="city" id="city__label">Ваш город</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-jc-sb">
+                            <div class="input-label__wrap">
+                                <input type="text" id="surname">
+                                <label for="surname" id="surname__label">
+                                    Фамилия*
+                                </label>
+                            </div>
+                            <div class="favorite__sports-wrap">
+                                <div class="favorite__sports-title">
+                                    <p class="favorite__sports-title__p">Любимые виды спорта</p>
+                                    <img src="../../images/Polygon2.png" alt="">
+                                </div>
+                                <div class="favorite__sports-title second-favorite__sports-title">Любимые виды спорта
+                                </div>
+                                <div class="favorite__sports">
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="football" name="check">
+                                        <label for="football"></label>
+                                        <span>Футбол</span>
+
+                                    </div>
+
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="mini-football" name="check">
+                                        <label for="mini-football"></label>
+                                        <span>Мини-футбол</span>
+
+                                    </div>
+
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="volleyball" name="check">
+                                        <label for="volleyball"></label>
+                                        <span>Волейбол</span>
+
+                                    </div>
+
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="athletics" name="check">
+                                        <label for="athletics"></label>
+                                        <span>Легкая атлетика</span>
+
+                                    </div>
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="handball" name="check">
+                                        <label for="handball"></label>
+                                        <span>Гандбол</span>
+
+                                    </div>
+
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" value="None" id="fitness" name="check">
+                                        <label for="fitness"></label>
+                                        <span>Фитнес</span>
+                                    </div>
+
+                                    <button id="close__favorite-sports">Закрыть</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-jc-sb">
+                            <div class="input-label__wrap">
+                                <input type="text" id="e-mail">
+                                <label for="e-mail" id="e-mail__label">
+                                    e-mail *
+                                </label>
+                            </div>
+                            <div class="input-label__wrap password__wrap">
+                                <input type="password" id="password" autocomplete="on">
+                                <label for="password" id="password__label">
+                                    Придумайте пароль*
+                                </label>
+                                <img id="password_eye" src="../../images/eye.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex flex-jc-sb">
+                            <div class="date-of-birth">
+                                <p class="date-of-birth__title">Дата рождения</p>
+                                <div class="flex__div date-of-birth__wrap">
+                                    <div class="day-of-birth__wrap">
+                                        <div class="day-of-birth__title">
+                                            <p>День</p>
+                                            <img src="../../images/Polygon2.png" alt="">
+                                        </div>
+                                        <div class="day-of-birth__title second__day-of-birth__title">День</div>
+                                        <div class="day-of-birth">
+                                            <div class="scroll__wrap">
+                                                <p class="days-of-birth">1</p>
+                                                <p class="days-of-birth">2</p>
+                                                <p class="days-of-birth">3</p>
+                                                <p class="days-of-birth">4</p>
+                                                <p class="days-of-birth">5</p>
+                                                <p class="days-of-birth">6</p>
+                                                <p class="days-of-birth">7</p>
+                                                <p class="days-of-birth">8</p>
+                                                <p class="days-of-birth">9</p>
+                                                <p class="days-of-birth">10</p>
+                                                <p class="days-of-birth">11</p>
+                                                <p class="days-of-birth">12</p>
+                                                <p class="days-of-birth">13</p>
+                                                <p class="days-of-birth">14</p>
+                                                <p class="days-of-birth">15</p>
+                                                <p class="days-of-birth">16</p>
+                                                <p class="days-of-birth">17</p>
+                                                <p class="days-of-birth">18</p>
+                                                <p class="days-of-birth">19</p>
+                                                <p class="days-of-birth">20</p>
+                                                <p class="days-of-birth">21</p>
+                                                <p class="days-of-birth">22</p>
+                                                <p class="days-of-birth">23</p>
+                                                <p class="days-of-birth">24</p>
+                                                <p class="days-of-birth">25</p>
+                                                <p class="days-of-birth">26</p>
+                                                <p class="days-of-birth">27</p>
+                                                <p class="days-of-birth">28</p>
+                                                <p class="days-of-birth">29</p>
+                                                <p class="days-of-birth">30</p>
+                                                <p class="days-of-birth">31</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="month-of-birth__wrap">
+                                        <div class="month-of-birth__title">
+                                            <p>Месяц</p>
+                                            <img src="../../images/Polygon2.png" alt="">
+                                        </div>
+                                        <div class="month-of-birth__title second__month-of-birth__title">Месяц</div>
+                                        <div class="month-of-birth">
+                                            <div class="scroll__wrap">
+                                                <p class="months-of-birth">Январь</p>
+                                                <p class="months-of-birth">Февраль</p>
+                                                <p class="months-of-birth">Март</p>
+                                                <p class="months-of-birth">Апрель</p>
+                                                <p class="months-of-birth">Май</p>
+                                                <p class="months-of-birth">Июнь</p>
+                                                <p class="months-of-birth">Июль</p>
+                                                <p class="months-of-birth">Август</p>
+                                                <p class="months-of-birth">Сентябрь</p>
+                                                <p class="months-of-birth">Октябрь</p>
+                                                <p class="months-of-birth">Ноябрь</p>
+                                                <p class="months-of-birth">Декабрь</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="year-of-birth__wrap">
+                                        <div class="year-of-birth__title">
+                                            <p>Год</p>
+                                            <img src="../../images/Polygon2.png" alt="">
+                                        </div>
+                                        <div class="year-of-birth__title second__year-of-birth__title">Год</div>
+                                        <div class="year-of-birth">
+                                            <div class="scroll__wrap">
+                                                <p class="years-of-birth">2022</p>
+                                                <p class="years-of-birth">2021</p>
+                                                <p class="years-of-birth">2020</p>
+                                                <p class="years-of-birth">2019</p>
+                                                <p class="years-of-birth">2018</p>
+                                                <p class="years-of-birth">2017</p>
+                                                <p class="years-of-birth">2016</p>
+                                                <p class="years-of-birth">2015</p>
+                                                <p class="years-of-birth">2014</p>
+                                                <p class="years-of-birth">2013</p>
+                                                <p class="years-of-birth">2012</p>
+                                                <p class="years-of-birth">2011</p>
+                                                <p class="years-of-birth">2010</p>
+                                                <p class="years-of-birth">2009</p>
+                                                <p class="years-of-birth">2008</p>
+                                                <p class="years-of-birth">2007</p>
+                                                <p class="years-of-birth">2006</p>
+                                                <p class="years-of-birth">2005</p>
+                                                <p class="years-of-birth">2004</p>
+                                                <p class="years-of-birth">2003</p>
+                                                <p class="years-of-birth">2002</p>
+                                                <p class="years-of-birth">2001</p>
+                                                <p class="years-of-birth">2000</p>
+                                                <p class="years-of-birth">1999</p>
+                                                <p class="years-of-birth">1998</p>
+                                                <p class="years-of-birth">1997</p>
+                                                <p class="years-of-birth">1996</p>
+                                                <p class="years-of-birth">1995</p>
+                                                <p class="years-of-birth">1994</p>
+                                                <p class="years-of-birth">1993</p>
+                                                <p class="years-of-birth">1992</p>
+                                                <p class="years-of-birth">1991</p>
+                                                <p class="years-of-birth">1990</p>
+                                                <p class="years-of-birth">1989</p>
+                                                <p class="years-of-birth">1988</p>
+                                                <p class="years-of-birth">1987</p>
+                                                <p class="years-of-birth">1986</p>
+                                                <p class="years-of-birth">1985</p>
+                                                <p class="years-of-birth">1984</p>
+                                                <p class="years-of-birth">1983</p>
+                                                <p class="years-of-birth">1982</p>
+                                                <p class="years-of-birth">1981</p>
+                                                <p class="years-of-birth">1980</p>
+                                                <p class="years-of-birth">1979</p>
+                                                <p class="years-of-birth">1978</p>
+                                                <p class="years-of-birth">1977</p>
+                                                <p class="years-of-birth">1976</p>
+                                                <p class="years-of-birth">1975</p>
+                                                <p class="years-of-birth">1974</p>
+                                                <p class="years-of-birth">1973</p>
+                                                <p class="years-of-birth">1972</p>
+                                                <p class="years-of-birth">1971</p>
+                                                <p class="years-of-birth">1970</p>
+                                                <p class="years-of-birth">1969</p>
+                                                <p class="years-of-birth">1968</p>
+                                                <p class="years-of-birth">1967</p>
+                                                <p class="years-of-birth">1966</p>
+                                                <p class="years-of-birth">1965</p>
+                                                <p class="years-of-birth">1964</p>
+                                                <p class="years-of-birth">1963</p>
+                                                <p class="years-of-birth">1962</p>
+                                                <p class="years-of-birth">1961</p>
+                                                <p class="years-of-birth">1960</p>
+                                                <p class="years-of-birth">1959</p>
+                                                <p class="years-of-birth">1958</p>
+                                                <p class="years-of-birth">1957</p>
+                                                <p class="years-of-birth">1956</p>
+                                                <p class="years-of-birth">1955</p>
+                                                <p class="years-of-birth">1954</p>
+                                                <p class="years-of-birth">1953</p>
+                                                <p class="years-of-birth">1952</p>
+                                                <p class="years-of-birth">1951</p>
+                                                <p class="years-of-birth">1950</p>
+                                                <p class="years-of-birth">1949</p>
+                                                <p class="years-of-birth">1948</p>
+                                                <p class="years-of-birth">1947</p>
+                                                <p class="years-of-birth">1946</p>
+                                                <p class="years-of-birth">1945</p>
+                                                <p class="years-of-birth">1944</p>
+                                                <p class="years-of-birth">1943</p>
+                                                <p class="years-of-birth">1942</p>
+                                                <p class="years-of-birth">1941</p>
+                                                <p class="years-of-birth">1940</p>
+                                                <p class="years-of-birth">1939</p>
+                                                <p class="years-of-birth">1938</p>
+                                                <p class="years-of-birth">1937</p>
+                                                <p class="years-of-birth">1936</p>
+                                                <p class="years-of-birth">1935</p>
+                                                <p class="years-of-birth">1934</p>
+                                                <p class="years-of-birth">1933</p>
+                                                <p class="years-of-birth">1932</p>
+                                                <p class="years-of-birth">1931</p>
+                                                <p class="years-of-birth">1930</p>
+                                                <p class="years-of-birth">1929</p>
+                                                <p class="years-of-birth">1928</p>
+                                                <p class="years-of-birth">1927</p>
+                                                <p class="years-of-birth">1926</p>
+                                                <p class="years-of-birth">1925</p>
+                                                <p class="years-of-birth">1924</p>
+                                                <p class="years-of-birth">1923</p>
+                                                <p class="years-of-birth">1922</p>
+                                                <p class="years-of-birth">1921</p>
+                                                <p class="years-of-birth">1920</p>
+                                                <p class="years-of-birth">1919</p>
+                                                <p class="years-of-birth">1918</p>
+                                                <p class="years-of-birth">1917</p>
+                                                <p class="years-of-birth">1916</p>
+                                                <p class="years-of-birth">1915</p>
+                                                <p class="years-of-birth">1914</p>
+                                                <p class="years-of-birth">1913</p>
+                                                <p class="years-of-birth">1912</p>
+                                                <p class="years-of-birth">1911</p>
+                                                <p class="years-of-birth">1910</p>
+                                                <p class="years-of-birth">1909</p>
+                                                <p class="years-of-birth">1908</p>
+                                                <p class="years-of-birth">1907</p>
+                                                <p class="years-of-birth">1906</p>
+                                                <p class="years-of-birth">1905</p>
+                                                <p class="years-of-birth">1904</p>
+                                                <p class="years-of-birth">1903</p>
+                                                <p class="years-of-birth">1902</p>
+                                                <p class="years-of-birth">1901</p>
+                                                <p class="years-of-birth">1900</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-label__wrap password__wrap">
+                                <input type="password" id="repeat-password" autocomplete="on">
+                                <label for="repeat-password" id="repeat-password__label">
+                                    Повторите пароль*
+                                </label>
+                                <img id="repeat-password_eye" src="../../images/eye.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-last__wrap">
+                        <div class="checkbox__wrap reg-checkbox__wrap">
+                            <input type="checkbox" value="None" id="subscribe" name="check">
+                            <label for="subscribe"></label>
+                            <span>Подписаться на новости и акции</span>
+                        </div>
+                        <button id="reg-submit">Зарегистрироваться</button>
+                        <a href="#">Отмена</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="main__nav">
+        <div class="container">
+            <div class="main__nav__wrap flex flex-ai-c flex-jc-sb">
+                <div class="main__nav__form flex flex-ai-c">
+                    <button><img src="../../images/Vector(Stroke)2.png" alt=""></button>
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div class="main__nav__items-wrap flex flex-ai-c">
+                    <a href="" class="main__nav__items">Новинки</a>
+                    <a href="../../pages/teams/teams.html" class="main__nav__items">Команды</a>
+                    <a href="../../pages/men/men.html" class="main__nav__items">Мужчинам</a>
+                    <div class="main__nav__logo">
+                        <img src="../../images/Group.png" alt="">
+                    </div>
+                    <a href="" class="main__nav__items">Женщинам</a>
+                    <a href="" class="main__nav__items">Дети</a>
+                    <a href="" class="main__nav__items">Распродажа</a>
+
+                    <div class="main__nav__items__dropdown">
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Виды спорта</h5>
+                            <p>Футбол</p>
+                            <p>Мини-футбол</p>
+                            <p>Волейбол</p>
+                            <p>Легкая атлетика</p>
+                            <p>Гандбол</p>
+                            <p>Фитнес</p>
+                            <p>Регби</p>
+                            <p>Йога</p>
+                        </div>
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Одежда</h5>
+                            <p>Худи и толстовки</p>
+                            <p>Майки и футболки</p>
+                            <p>Брюки и тайтсы</p>
+                            <p>Спортивные костюмы</p>
+                            <p>Куртки и жилеты</p>
+                            <p>Носки и гетры</p>
+                            <p>Форма для команд и джерси</p>
+                            <p>Компрессионное белье и базовый слой</p>
+                            <p>Прочее</p>
+                        </div>
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Обувь</h5>
+                            <p>Для бега</p>
+                            <p>Футзальная</p>
+                            <p>Искусственное поле</p>
+                            <p>Волейбольная</p>
+                            <p>Для фитнеса</p>
+                            <p>Кэжуальная</p>
+                            <p>Прочее</p>
+                        </div>
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Аксессуары</h5>
+                            <p>Мячи</p>
+                            <p>Щитки</p>
+                            <p>Перчатки</p>
+                            <p>Манишки</p>
+                            <p>Защита</p>
+                            <p>Головной убор</p>
+                            <p>Прочее</p>
+                        </div>
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Бренды</h5>
+                            <p>Мячи</p>
+                            <p>Щитки</p>
+                            <p>Перчатки</p>
+                            <p>Манишки</p>
+                            <p>Защита</p>
+                            <p>Головной убор</p>
+                            <p>Прочее</p>
+                        </div>
+                        <div class="main__nav__items__dropdown__inner__wrap">
+                            <h5>Спортивное питание</h5>
+                            <p>Мячи</p>
+                            <p>Щитки</p>
+                            <p>Перчатки</p>
+                            <p>Манишки</p>
+                            <p>Защита</p>
+                            <p>Головной убор</p>
+                            <p>Прочее</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__nav__icons-wrap flex flex-jc-fe flex-ai-c">
+                    <div class="main__nav__like__wrap">
+                        <div class="main__nav__icon main__nav__like">
+                            <img src="../../images/LikeVector.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="main__nav__cart__wrap">
+                        <div class="main__nav__icon main__nav__cart">
+                            <a href="../../pages/cart/cart.html">
+                                <img src="../../images/shopping-cart.png" alt="">
+                            </a>
+                            <div class="dropdown__cart">
+                                <div class="dropdown__cart__wrap flex flex-fd-c">
+                                    <div class="dropdown__cart__box flex">
+                                        <img src="../../images/cartDropdown.png" alt="">
+                                        <div class="dropdown__cart__box-f-text flex flex-fd-c">
+                                            <h5>Nike Air Zoom Pegasus 38 Limited Edition...</h5>
+                                            <div>
+                                                <p>Размер:</p>
+                                                <h6>XL</h6>
+                                            </div>
+                                            <div>
+                                                <p>Количество:</p>
+                                                <h6>4</h6>
+                                            </div>
+                                            <div>
+                                                <p>Цвет:</p>
+                                                <h6>Красный</h6>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__cart__box-s-text flex flex-fd-c">
+                                            <h5>12 980 ₽</h5>
+                                            <h6>12 980 ₽</h6>
+                                            <p>15%</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__cart__box flex">
+                                        <img src="../../images/cartDropdown.png" alt="">
+                                        <div class="dropdown__cart__box-f-text flex flex-fd-c">
+                                            <h5>Nike Air Zoom Pegasus 38 Limited Edition...</h5>
+                                            <div>
+                                                <p>Размер:</p>
+                                                <h6>XL</h6>
+                                            </div>
+                                            <div>
+                                                <p>Количество:</p>
+                                                <h6>4</h6>
+                                            </div>
+                                            <div>
+                                                <p>Цвет:</p>
+                                                <h6>Красный</h6>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__cart__box-s-text flex flex-fd-c">
+                                            <h5>12 980 ₽</h5>
+                                            <h6>12 980 ₽</h6>
+                                            <p>15%</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__cart__box flex">
+                                        <img src="../../images/cartDropdown.png" alt="">
+                                        <div class="dropdown__cart__box-f-text flex flex-fd-c">
+                                            <h5>Nike Air Zoom Pegasus 38 Limited Edition...</h5>
+                                            <div>
+                                                <p>Размер:</p>
+                                                <h6>XL</h6>
+                                            </div>
+                                            <div>
+                                                <p>Количество:</p>
+                                                <h6>4</h6>
+                                            </div>
+                                            <div>
+                                                <p>Цвет:</p>
+                                                <h6>Красный</h6>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__cart__box-s-text flex flex-fd-c">
+                                            <h5>12 980 ₽</h5>
+                                            <h6>12 980 ₽</h6>
+                                            <p>15%</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__cart__box flex">
+                                        <img src="../../images/cartDropdown.png" alt="">
+                                        <div class="dropdown__cart__box-f-text flex flex-fd-c">
+                                            <h5>Nike Air Zoom Pegasus 38 Limited Edition...</h5>
+                                            <div>
+                                                <p>Размер:</p>
+                                                <h6>XL</h6>
+                                            </div>
+                                            <div>
+                                                <p>Количество:</p>
+                                                <h6>4</h6>
+                                            </div>
+                                            <div>
+                                                <p>Цвет:</p>
+                                                <h6>Красный</h6>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__cart__box-s-text flex flex-fd-c">
+                                            <h5>12 980 ₽</h5>
+                                            <h6>12 980 ₽</h6>
+                                            <p>15%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown__cart__buttons__wrap flex flex-fd-c">
+                                    <div class="flex flex-jc-sb">
+                                        <h6>Итог:</h6>
+                                        <h6>51 920 ₽</h6>
+                                    </div>
+
+                                    <a href="../../pages/cart/cart.html">Перейти в корзину</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__nav__log-in__wrap">
+                        <div class="main__nav__icon main__nav__log-in">
+                            <a href="../../pages/authorization/authorization.html">
+                                <img id="login-img" src="../../images/log-in.png" alt="">
+                            </a>
+
+                            <div class="dropdown">
+                                <div>
+                                    <a href="../../pages/profile/profile.html">
+                                        <img src="../../images/098-user.png" alt="">
+                                        <p>Профиль</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../../images/110-news.png" alt="">
+                                        <p>Новости</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../../images/heart.png" alt="">
+                                        <p>Избранное</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="../../pages/special_offers/specialOffers.html">
+                                        <img src="../../images/hot-sale-bold.png" alt="">
+                                        <p>Спец. предложения</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../../images/014-timer.png" alt="">
+                                        <p>История заказов</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../../images/Subtract.png" alt="">
+                                        <p>Помощь</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./registration.js"></script>
+    <script src="../../javascript/inputScript.js"></script>
+</body>
+
+</html>

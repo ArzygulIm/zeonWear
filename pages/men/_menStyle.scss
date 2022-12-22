@@ -1,0 +1,47 @@
+#men__header {
+    padding: 26px 0 15px;
+}
+
+#men {
+    padding: 0 0 32px;
+}
+
+.men__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox__wrap label {
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox__wrap label:after {
+    top: 2px;
+    left: 1px;
+}
+
+.men__adress {
+    color: #054EDB;
+}
+
+.men__a-filter__wrap div p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #171717;
+}
+
+.nav__buttons button:nth-child(3) {
+    background: #D4E3FF;
+}
+
+.men__header__adress {
+    a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #98949E;
+        text-decoration: none;
+    }
+}

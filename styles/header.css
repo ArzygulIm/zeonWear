@@ -1,0 +1,42 @@
+.header {
+  height: 77px;
+}
+.header__wrap {
+  height: 77px;
+}
+.header__phone-number {
+  padding-right: 32px;
+  height: 37px;
+  border-right: 1px solid #CDDAF1;
+}
+.header__phone-number p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.header__social-media {
+  padding: 0 32px;
+  height: 37px;
+  border-right: 1px solid #CDDAF1;
+}
+.header__social-media a {
+  cursor: pointer;
+}
+.header__social-media a:not(:last-child) {
+  margin-right: 16px;
+}
+.header__logo {
+  padding-left: 32px;
+}
+.header__logo p a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 575;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,19 @@
+@import "mainMedia";
+@import "footerMedia";
+
+@media(max-width:1900px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width:1500px) {
+
+    .footer__wrap {
+        width: 100%;
+    }
+
+}

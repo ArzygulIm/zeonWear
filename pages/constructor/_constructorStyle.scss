@@ -1,0 +1,520 @@
+#constructor {
+    padding-bottom: 24px;
+}
+
+.constructor {
+    &__wrap {
+        column-gap: 24px;
+
+    }
+
+    &__carousel {
+        &__main__wrap {
+            width: 1109px;
+            height: 808px;
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        &__header {
+            h5 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 125%;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #171717;
+                margin-bottom: 12px;
+            }
+
+            p {
+                a {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #98949E;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        &__wrap {
+            padding: 65px 0 0 0;
+        }
+
+        &__text {
+            padding: 24px 0;
+            border-bottom: 1px solid #D4E3FF;
+
+            &:first-child {
+                padding: 0px 0px 24px;
+            }
+
+            h5 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #171717;
+            }
+
+            h6 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #8B96B1;
+            }
+
+            &__wrap {
+                padding: 32px 24px;
+                gap: 24px;
+                width: 363px;
+                height: 698px;
+                background: #FFFFFF;
+                border-radius: 16px;
+
+                h4 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    color: #8B96B1;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &-f-text {
+            margin-bottom: 6px;
+        }
+
+        &__input-range {
+            padding: 24px 0;
+
+            .range_main {
+                width: 315px;
+                position: relative;
+            }
+
+            .range_beforeBtn{
+                height: 3px;
+                width: 50%;
+                background-color: #FD9B08;
+                border-radius: 2px;
+                position: absolute;
+                bottom: 5px;
+            }
+
+            #range_input {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 4px;
+                border-radius: 3px;
+                outline: none;
+                background: #EDEDED;
+
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    width: 24px;
+                    height: 24px;
+                    z-index: 3;
+                    position: relative;
+                }
+
+            }
+
+            #range_selector {
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                bottom: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+
+                .range_selectBtn {
+                    cursor: pointer;
+                    border: none;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url("../../images/rangeBtn.png");
+                    background-size: contain;
+                    background-position: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__section__wrap {
+        column-gap: 24px;
+    }
+}
+
+.constructor-f-carousel {
+    &__container {
+        width: 1917px;
+    }
+
+    &__carousel {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-bottom: 7px;
+
+        &__wrap {
+            width: 1090px;
+        }
+
+        &__prevBtn,
+        &__nextBtn {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 11px 15px;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 5;
+        }
+
+        &__prevBtn {
+            background-image: url("../../images/PolygonGray2.png");
+            left: 404px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack.png");
+            }
+        }
+
+        &__nextBtn {
+            background-image: url("../../images/PolygonGray.png");
+            right: 427px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack2.png");
+            }
+        }
+
+        &__list {
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 206px;
+        }
+
+        &__item:nth-child(1) {
+            background-image: url("../../images/tShirtDarkGreen.png");
+        }
+
+        &__item:nth-child(2) {
+            background-image: url("../../images/tShirtWhite.png");
+        }
+
+        &__item:nth-child(3) {
+            background-image: url("../../images/tShirtBlue.png");
+        }
+
+        &__item:nth-child(4) {
+            background-image: url("../../images/tShirtLightGreen.png");
+        }
+
+        &__item:nth-child(5) {
+            background-image: url("../../images/tShirtBlack.png");
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: all .3s ease-in;
+            height: 206px;
+            width: 206px;
+            border-radius: 16px;
+            background-size: 206px 206px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+
+            &[data-pos="0"] {
+                transform: translateX(-422px) translateY(58px) scale(0.67);
+                opacity: 0.6;
+            }
+
+            &[data-pos="1"] {
+                transform: translateX(-232px) translateY(37px) scale(0.76);
+                opacity: 0.6;
+            }
+
+            &[data-pos="2"] {
+                transform: translateX(-11px);
+            }
+
+            &[data-pos="3"] {
+                transform: translateX(210px) translateY(37px) scale(0.76);
+                opacity: 0.6;
+            }
+
+            &[data-pos="4"] {
+                transform: translateX(394px) translateY(58px) scale(0.67);
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+.constructor-s-carousel {
+    &__container {
+        width: 1917px;
+    }
+
+    &__carousel {
+        margin-bottom: 14px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &__wrap {
+            width: 1090px;
+        }
+
+        &__prevBtn,
+        &__nextBtn {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 11px 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 5;
+        }
+
+        &__prevBtn {
+            background-image: url("../../images/PolygonGray2.png");
+            left: 404px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack.png");
+            }
+        }
+
+        &__nextBtn {
+            background-image: url("../../images/PolygonGray.png");
+            right: 427px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack2.png");
+            }
+        }
+
+        &__list {
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 132px;
+        }
+
+        &__item:nth-child(1) {
+            background-image: url("../../images/shortGray.png");
+        }
+
+        &__item:nth-child(2) {
+            background-image: url("../../images/shortWhite.png");
+        }
+
+        &__item:nth-child(3) {
+            background-image: url("../../images/shortGreen.png");
+        }
+
+        &__item:nth-child(4) {
+            background-image: url("../../images/shortRed.png");
+        }
+
+        &__item:nth-child(5) {
+            background-image: url("../../images/shortBlack.png");
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: all .3s ease-in;
+            width: 132px;
+            height: 132px;
+            border-radius: 16px;
+            background-size: 132px 132px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+
+            &[data-pos="0"] {
+                transform: translateX(-422px) translateY(-3px) scale(0.67);
+                opacity: 0.6;
+            }
+
+            &[data-pos="1"] {
+                transform: translateX(-232px) translateY(-5px) scale(0.78);
+                opacity: 0.6;
+            }
+
+            &[data-pos="2"] {
+                transform: translateX(-11px);
+            }
+
+            &[data-pos="3"] {
+                transform: translateX(210px) translateY(-4px) scale(0.78);
+                opacity: 0.6;
+            }
+
+            &[data-pos="4"] {
+                transform: translateX(394px) scale(0.67);
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+.constructor-t-carousel {
+    &__container {
+        width: 1917px;
+    }
+
+    &__carousel {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &__wrap {
+            width: 1090px;
+        }
+
+        &__prevBtn,
+        &__nextBtn {
+            border: none;
+            background: transparent;
+            padding: 5px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 11px 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 5;
+        }
+
+        &__prevBtn {
+            background-image: url("../../images/PolygonGray2.png");
+            left: 404px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack.png");
+            }
+        }
+
+        &__nextBtn {
+            background-image: url("../../images/PolygonGray.png");
+            right: 427px;
+
+            &:hover {
+                background-image: url("../../images/PolygonBlack2.png");
+            }
+        }
+
+        &__list {
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 132px;
+        }
+
+        &__item:nth-child(1) {
+            background-image: url("../../images/shoesBlack.png");
+        }
+
+        &__item:nth-child(2) {
+            background-image: url("../../images/shoesDarkBlue.png");
+        }
+
+        &__item:nth-child(3) {
+            background-image: url("../../images/shoesGreen.png");
+        }
+
+        &__item:nth-child(4) {
+            background-image: url("../../images/shoesRed.png");
+        }
+
+        &__item:nth-child(5) {
+            background-image: url("../../images/shoesLightBlue.png");
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: all .3s ease-in;
+            height: 132px;
+            width: 132px;
+            border-radius: 16px;
+            background-size: 132px 132px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+
+            &[data-pos="0"] {
+                transform: translateX(-424px) translateY(-54px) scale(0.66);
+                opacity: 0.6;
+            }
+
+            &[data-pos="1"] {
+                transform: translateX(-232px) translateY(-34px) scale(0.78);
+                opacity: 0.6;
+                opacity: 0.6;
+            }
+
+            &[data-pos="2"] {
+                transform: translateX(-15px);
+            }
+
+            &[data-pos="3"] {
+                transform: translateX(210px) translateY(-34px) scale(0.78);
+                opacity: 0.6;
+                opacity: 0.6;
+            }
+
+            &[data-pos="4"] {
+                transform: translateX(394px) translateY(-54px) scale(0.66);
+                opacity: 0.6;
+                opacity: 0.6;
+            }
+        }
+    }
+}

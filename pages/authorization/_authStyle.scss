@@ -1,0 +1,257 @@
+.auth__header {
+    padding: 4px 0 0 13px;
+
+    &__logo {
+        padding: 0 8px 0 31px;
+
+        p {
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__social-media {
+        a:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+}
+
+#auth {
+    margin: -4px 0 0 0;
+}
+
+.auth__wrap {
+    width: 1856px;
+    height: 873px;
+    background: url("../../images/image\ 2.png");
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 232px;
+}
+
+.auth__logo h2 {
+    color: #FFFFFF;
+}
+
+.auth__logo p {
+    color: #FFFFFF;
+}
+
+.auth__form {
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 32px;
+    width: 363px;
+    height: 332px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.auth__form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.auth__sign-up__wrap {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.auth__sign-up__wrap p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
+
+.auth__sign-up__wrap a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #054EDB;
+    margin-left: 4px;
+}
+
+.auth-mail__wrap {
+    position: relative;
+    padding: 9px 16px;
+    gap: 12px;
+    width: 316px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #CDDAF1;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.auth-mail__wrap input {
+    position: absolute;
+    left: 12px;
+    width: 90%;
+    height: 23px;
+    border: none;
+    outline: none;
+
+}
+
+.auth-mail__wrap label {
+    position: absolute;
+    left: 14px;
+    top: 11px;
+    z-index: 1;
+    width: 90%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 175%;
+    display: flex;
+    align-items: center;
+    color: #8B96B1;
+    cursor: inherit;
+    transition: ease-in-out .5s;
+}
+
+.auth-password__wrap {
+    display: flex;
+    justify-content: end;
+
+    label {
+        top: 10px;
+        left: 15px;
+    }
+}
+
+.auth-password__wrap img {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.auth__btn {
+    cursor: pointer;
+    padding: 8px 20px;
+    width: 315px;
+    height: 44px;
+    background: #171717;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #FFFFFF;
+    margin: 10px 0 19px;
+}
+
+.forgot-password__a,
+.cansel {
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #8B96B1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgot-password__form {
+    display: none;
+    margin-top: 277px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 32px;
+    width: 363px;
+    height: 320px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.forgot-password__form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.forgot-password__form p {
+    width: 315px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.forgot-password__form .auth-mail__wrap {
+    margin-bottom: 0;
+}
+
+.cansel {
+    width: 100%;
+}
+
+.new-password__form {
+    display: none;
+    margin-top: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 32px;
+    width: 363px;
+    height: 374px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.new-password__form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.new-password__form p {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
+
+.new-password__form div {
+    margin-top: 30px;
+}
+
+.hide__form {
+    display: none;
+}
+
+.show__form {
+    display: flex;
+}
+
+.main-nav__logo {
+    cursor: pointer;
+}
+
+@import "authModal";

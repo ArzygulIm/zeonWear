@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мужчины</title>
+    <link rel="icon" href="../../images/Slice3.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap flex flex-jc-fe flex-ai-c">
+                <div class="header__phone-number">
+                    <p>8 (800) 201-06-19</p>
+                </div>
+                <div class="header__social-media">
+                    <a href="https://www.instagram.com" target="_blank"><img src="../../images/Instagram.png" alt=""></a>
+                    <a href="https://telegram.org" target="_blank"><img src="../../images/telegram.png" alt=""></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../../images/akar-icons_facebook-fill.png"
+                            alt=""></a>
+                    <a href="https://vk.com" target="_blank"><img src="../../images/vkImg.png" alt=""></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../../images/Youtube.png" alt=""></a>
+                </div>
+                <div class="header__logo">
+                    <p><a href="../../index.html">zeon wear</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="men">
+        <div class="container">
+            <div class="men__wrap">
+                <div class="filters">
+                    <div class="categories__wrap">
+                        <div class="filter__title">
+                            <span class="category__title">Категория</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="categories show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="t-shirt">
+                                <label for="t-shirt"></label>
+                                <span>Футболка</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="shorts">
+                                <label for="shorts"></label>
+                                <span>Шорты</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="tricot">
+                                <label for="tricot"></label>
+                                <span>Трико</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="shoes">
+                                <label for="shoes"></label>
+                                <span>Обувь</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="sportswear">
+                                <label for="sportswear"></label>
+                                <span>Спортивка</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="headwear">
+                                <label for="headwear"></label>
+                                <span>Головной убор</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sports__wrap">
+                        <div class="filter__title">
+                            <span class="sports__title">Виды спорта</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="sports show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="football">
+                                <label for="football"></label>
+                                <span>Футбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="mini-football">
+                                <label for="mini-football"></label>
+                                <span>Мини-футбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="volleyball">
+                                <label for="volleyball"></label>
+                                <span>Волейбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="athletics">
+                                <label for="athletics"></label>
+                                <span>Легкая атлетика</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="handball">
+                                <label for="handball"></label>
+                                <span>Гандбол</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="fitness">
+                                <label for="fitness"></label>
+                                <span>Фитнес</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="rugby">
+                                <label for="rugby"></label>
+                                <span>Регби</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="yoga">
+                                <label for="yoga"></label>
+                                <span>Йога</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brand__wrap">
+                        <div class="filter__title">
+                            <span class="brand__title">Бренд</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="brand input-label__wrap show-div">
+                            <input type="text" id="search">
+                            <label for="search" id="search__label">Я ищу...</label>
+                        </div>
+                    </div>
+
+                    <div class="price__wrap">
+                        <div class="filter__title">
+                            <span class="price__title">Цена</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="price show-div">
+                            <div class="input-label__wrap price-input__wrap">
+                                <input type="number" id="price1">
+                                <label for="price1" id="price1__label">От</label>
+                                <span id="price1__span"></span>
+                            </div>
+                            <div class="input-label__wrap price-input__wrap">
+                                <input type="number" id="price2">
+                                <label for="price2" id="price2__label">До</label>
+                                <span id="price2__span"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="size__wrap">
+                        <div class="filter__title">
+                            <span class="size__title">Размер</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="size show-div">
+                            <div class="size-country__wrap">
+                                <button>EU</button>
+                                <button>US</button>
+                                <button>JP</button>
+                                <button>RU</button>
+                            </div>
+                            <div class="size-value__wrap">
+                                <button>XXL</button>
+                                <button>XL</button>
+                                <button>L</button>
+                                <button>M</button>
+                                <button>S</button>
+                            </div>
+                            <a href="#" class="modal-btn">Таблица размеров</a>
+                        </div>
+                    </div>
+
+                    <div class="material__wrap">
+                        <div class="filter__title">
+                            <span class="material__title">Материал</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="material show-div">
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="faux-leather">
+                                <label for="faux-leather"></label>
+                                <span>Искусственная кожа</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="natural-suede">
+                                <label for="natural-suede"></label>
+                                <span>Натуральная замша</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="leather">
+                                <label for="leather"></label>
+                                <span>Натуральная кожа</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="natural-nubuck">
+                                <label for="natural-nubuck"></label>
+                                <span>Натуральный нубук</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="nubuck">
+                                <label for="nubuck"></label>
+                                <span>Нубук</span>
+                            </div>
+                            <div class="checkbox__wrap">
+                                <input type="checkbox" id="polyurethane">
+                                <label for="polyurethane"></label>
+                                <span>Полиуретан</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color__wrap">
+                        <div class="filter__title">
+                            <span class="color__title">Цвет</span>
+                            <img src="../../images/Polygon2.png" alt="">
+                        </div>
+                        <div class="color show-div">
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                            <div><button></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__main men">
+                    <div>
+                        <h2 class="men__header__title">Мужчины</h2>
+                        <div class="section__a-filter__wrap">
+                            <p class="men__header__adress">
+                                <a href="../../index.html">Главная /</a>
+                                <a href="#" class="men__adress">Мужчины </a>
+                                <a href="#">/ Top flex</a>
+                            </p>
+                            <div class="section__filter__menu">
+                                <div class="section__dropdown__back"></div>
+                                <div class="section__filter__menu__title">
+                                    <img src="../../images/VectorDropdown.png" alt="">
+                                    <p>Сортировка</p>
+                                </div>
+                                <div class="section__dropdown">
+                                    <h5>Сортировать по:</h5>
+                                    <div class="section__dropdown__child">
+                                        <div class="section__radio__title__wrap">
+                                            <div class="radio__wrap">
+                                                <input type="radio" class="radio" id="popular" name="group" checked>
+                                                <label class="radio__label" for="popular"></label>
+                                            </div>
+                                            <span>Популярности</span>
+                                        </div>
+                                        <div  class="section__radio__title__wrap">
+                                            <div class="radio__wrap">
+                                                <input type="radio" class="radio" id="price" name="group">
+                                                <label class="radio__label" for="price"></label>
+                                            </div>
+                                            <span>Цене</span>
+                                        </div>
+                                        <div class="section__radio__title__wrap">
+                                            <div class="radio__wrap">
+                                                <input type="radio" class="radio" id="new" name="group">
+                                                <label class="radio__label" for="new"></label>
+                                            </div>
+                                            <span>Новинкам</span>
+                                        </div>
+                                        <div  class="section__radio__title__wrap">
+                                            <div class="radio__wrap">
+                                                <input type="radio" class="radio" id="sale" name="group">
+                                                <label class="radio__label" for="sale"></label>
+                                            </div>
+                                            <span>Скидкам</span>
+                                        </div>
+                                        <div class="section__radio__title__wrap">
+                                            <div class="radio__wrap">
+                                                <input type="radio" class="radio" id="recomended" name="group">
+                                                <label class="radio__label" for="recomended"></label>
+                                            </div>
+                                            <span>Рекомендованные</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__nav__buttons">
+                            <button>Бутсы</button>
+                            <button>Мини-футбол</button>
+                            <button>Фитнес</button>
+                            <button>Обувь</button>
+                            <button>Йога</button>
+                            <button>Майки и футболки</button>
+                            <button>Куртки и жилеты</button>
+                            <button>Спортивные костюмы</button>
+                            <button>Головной убор</button>
+                            <button>Мячи</button>
+                            <button>Бутсы</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">                            
+                            <a href="../product_page/productPage.html" class="section__box men__box">
+                                <div class="favorite-wrap">
+                                    <span class="section__new">NEW</span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44.png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(1).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                        <h6>15%</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span class="section__new">NEW</span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(2).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                        <h6>15%</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(3).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(4).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(5).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(1).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44.png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44.png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(4).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(2).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="../product_page/productPage.html" class="section__box">
+                                <div class="favorite-wrap">
+                                    <span></span>
+                                    <img src="../../images/VectorHeart.png" alt="">
+                                </div>
+                                <img class="section__box-img" src="../../images/Rectangle44(4).png" alt="">
+                                <div class="section__box-text">
+                                    <h5>Top Flex</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <div>
+                                        <h6>12 980 ₽</h6>
+                                        <h6>11 033 ₽</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="men__modal">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <button class="modal__close-btn">
+                <span>Закрыть</span>
+                <img src="../../images/closeModal.png" alt="">
+            </button>
+            <div class="modal-inner">
+                <h4>Взрослые размеры обуви</h4>
+                <table>
+                    <tr>
+                        <th>EUR</th>
+                        <td>36</td>
+                        <td>37</td>
+                        <td>37.5</td>
+                        <td>38</td>
+                        <td>39</td>
+                        <td>40</td>
+                        <td>40.5</td>
+                        <td>41</td>
+                        <td>42</td>
+                        <td>42.5</td>
+                        <td>43</td>
+                        <td>43.5</td>
+                        <td>44</td>
+                        <td>44.5</td>
+                        <td>45</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <th>US</th>
+                        <td>4.5</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td>6</td>
+                        <td>6.5</td>
+                        <td>7</td>
+                        <td>7.5</td>
+                        <td>8</td>
+                        <td>8.5</td>
+                        <td>9</td>
+                        <td>9.5</td>
+                        <td>10</td>
+                        <td>10.5</td>
+                        <td>11</td>
+                        <td>11.5</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th>CM</th>
+                        <td>23</td>
+                        <td>23.5</td>
+                        <td>24</td>
+                        <td>24.5</td>
+                        <td>25</td>
+                        <td>25.5</td>
+                        <td>26</td>
+                        <td>26.5</td>
+                        <td>27</td>
+                        <td>27.5</td>
+                        <td>28</td>
+                        <td>28.5</td>
+                        <td>29</td>
+                        <td>29.5</td>
+                        <td>30</td>
+                        <td>30.5</td>
+                    </tr>
+                    <tr>
+                        <th>UK</th>
+                        <td>23</td>
+                        <td>23.5</td>
+                        <td>24</td>
+                        <td>24.5</td>
+                        <td>25</td>
+                        <td>25.5</td>
+                        <td>26</td>
+                        <td>26.5</td>
+                        <td>27</td>
+                        <td>27.5</td>
+                        <td>28</td>
+                        <td>28.5</td>
+                        <td>29</td>
+                        <td>29.5</td>
+                        <td>30</td>
+                        <td>30.5</td>
+                    </tr>
+                </table>
+                <div>
+                    <h3>zeon wear</h3>
+                    <p>by zeon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap flex ">
+                <div class="footer-contacts__wrap">
+                    <div>8 (800) 201-06-19</div>
+                    <div>mail@example.com</div>
+                    <div>
+                        <a href="https://www.instagram.com" target="_blank"><img src="../../images/Instagram.png" alt=""></a>
+                        <a href="https://telegram.org" target="_blank"><img src="../../images/telegram.png" alt=""></a>
+                        <a href="https://www.youtube.com" target="_blank"><img src="../../images/Youtube.png" alt=""></a>
+                        <a href="https://vk.com" target="_blank"><img src="../../images/vkImg.png" alt=""></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="../../images/akar-icons_facebook-fill.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h6>zeon wear</h6>
+                        <p>by zeon</p>
+                    </div>
+                </div>
+                <div class="footer-partners__wrap">
+                    <div>Стать партнером</div>
+                    <div>Арендодателям</div>
+                    <div>Подключиться к партнерской
+                        программе “Маркетплейс”</div>
+                </div>
+                <div class="footer-about__wrap">
+                    <div>О нас</div>
+                    <div>Помощь</div>
+                    <div>Способы оплаты</div>
+                    <div>Доставка</div>
+                </div>
+                <div class="footer-developers__wrap">
+                    <div>Разработка сайтов и мобильных приложений</div>
+                    <a href="#">www.zeon.ltd 2022</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./men.js"></script>
+
+</body>
+
+</html>

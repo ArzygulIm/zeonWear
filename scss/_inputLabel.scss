@@ -1,0 +1,40 @@
+.input-label__wrap {
+    position: relative;
+    padding: 12px 16px;
+    width: 315px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #CDDAF1;
+    border-radius: 16px;
+
+
+    input {
+        width: 90%;
+        height: 23px;
+        position: absolute;
+        left: 12px;
+        border: none;
+        outline: none;
+    }
+
+    label {
+        cursor: inherit;
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        z-index: 1;
+        width: 90%;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 175%;
+        display: flex;
+        align-items: center;
+        color: #8B96B1;
+        transition: ease-in-out .5s;
+    }
+}
+
+.input-label__wrap>input:focus+label {
+    line-height: 120%;
+    transform: translate(-15px, -30px) !important;
+}

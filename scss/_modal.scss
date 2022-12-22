@@ -1,0 +1,131 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.backdropActive {
+    display: block;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+    transition: transform 0.4s;
+    transform: scale(0);
+    z-index: 2;
+    padding: 48px 36px;
+    width: 1196px;
+    height: 617px;
+    border: 1px solid #D4E3FF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 66px;
+}
+
+.modalActive {
+    transform: scale(1);
+}
+
+.modal__close-btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__close-btn span {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #171717;
+    margin-right: 24px;
+}
+
+.modal-inner h4 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 66px;
+}
+
+table {
+    width: 1124px;
+    height: 214px;
+}
+
+th {
+    width: 80px;
+    border-right: 1px solid #CDDAF1;
+}
+
+tr {
+    padding: 21px 0 21px 0;
+}
+
+tr:first-child {
+    padding: 0 0 21px 0;
+    text-align: center;
+}
+
+tr:last-child {
+    padding: 21px 0 0 0;
+}
+
+th {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #054EDB;
+}
+
+td {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #171717;
+}
+
+.modal-inner div h3 {
+    font-weight: 575;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.modal-inner div p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #171717;
+}

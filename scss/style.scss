@@ -1,0 +1,57 @@
+@import "header";
+@import "nav";
+@import "footer";
+@import "checkbox";
+@import "sectionBox";
+@import "sectionFilters";
+@import "inputLabel";
+
+@import "../pages/authorization/authStyle";
+
+@import "../pages/registration/registrationStyle";
+
+@import "../pages/men/menStyle";
+
+@import "../pages/special_offers/specialOffers";
+
+@import "../pages/product_page/productPage";
+@import "../pages/product_page/productCarousel";
+
+@import "../pages/cart/cartStyle";
+
+@import "../pages/teams/teamsStyle";
+
+@import "../pages/sets/setsStyle";
+
+@import "../pages/sets_more/setsMoreStyle";
+
+@import "../pages/teams_category/teamsCategoryStyle";
+
+@import "../pages/constructor/constructorStyle";
+
+@import "../pages/profile/profileStyle";
+
+@import "../pages/news/newsStyle";
+
+@import "flexBox";
+@import "variables";
+@import "animations";
+@import "global";
+@import "modal";
+@import "burger";
+
+.logo {
+    margin: 64px;
+
+    h2 {
+        font-weight: 575;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

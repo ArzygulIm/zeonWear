@@ -1,0 +1,341 @@
+#reg__header {
+    padding-bottom: 14px;
+}
+
+.header__container {
+    width: 1927px;
+}
+
+#reg {
+    margin: -4px 0 0 0;
+}
+
+.phone-number__wrap {
+    padding-bottom: 4px;
+}
+
+#main__nav {
+    padding-top: 25px;
+}
+
+.reg__wrap {
+    width: 1856px;
+    height: 873px;
+    background: url("../../images/reg-back.png");
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg__form {
+    display: flex;
+    flex-direction: column;
+    margin: 173px 232px 0 0;
+    padding: 24px 24px 32px;
+    gap: 24px;
+    width: 696px;
+    height: 518px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.reg__form h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.flex__div {
+    display: flex;
+    column-gap: 16px;
+}
+
+.gender__wrap {
+    position: relative;
+}
+
+.gender__title,
+.favorite__sports-title {
+    width: 121px;
+}
+
+.gender__title,
+.favorite__sports-title,
+.day-of-birth__title,
+.month-of-birth__title,
+.year-of-birth__title {
+    position: relative;
+    z-index: 1;
+    height: 44px;
+    background: #FFFFFF;
+    transition: all .5s ease-in-out;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 175%;
+    color: #8B96B1;
+    border: 1px solid #CDDAF1;
+    cursor: default;
+}
+
+.second-gender__title,
+.second-favorite__sports-title,
+.second__day-of-birth__title,
+.second__month-of-birth__title,
+.second__year-of-birth__title {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.title__active {
+    border: 1px solid #054EDB;
+    color: #171717;
+}
+
+.gender {
+    width: 316px;
+    height: 100px;
+    row-gap: 20px;
+    padding: 24px 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.gender,
+.favorite__sports,
+.day-of-birth,
+.month-of-birth,
+.year-of-birth {
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-50%) scaleY(0);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #CDDAF1;
+    box-shadow: 0px 16px 33px -13px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    row-gap: 20px;
+}
+
+.day-of-birth,
+.month-of-birth,
+.year-of-birth {
+    height: 270px;
+    align-items: center;
+    padding: 24px 8px 20px 20px;
+}
+
+.scroll__wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    overflow-y: scroll;
+    width: 95%;
+}
+
+.scroll__wrap::-webkit-scrollbar {
+    width: 4px;
+    height: 222px;
+    background: #EAEEF4;
+    border-radius: 16px;
+}
+
+.scroll__wrap::-webkit-scrollbar-thumb {
+    background: #BED1F5;
+    border-radius: 16px;
+    width: 4px;
+}
+
+.year-of-birth div {
+    width: 50px !important;
+}
+
+.genders {
+    cursor: pointer;
+}
+
+.city__wrap {
+    width: 186px;
+}
+
+.reg-name {
+    width: 316px;
+}
+
+.child-flex__div {
+    column-gap: 8px;
+}
+
+.favorite__sports-wrap {
+    position: relative;
+}
+
+.favorite__sports-title {
+    width: 316px;
+}
+
+.favorite__sports-title__active {
+    border: 1px solid #054EDB;
+    color: #171717;
+}
+
+.favorite__sports {
+    width: 316px;
+    padding: 21.67px;
+}
+
+.auth__reg__backdrop, .profile__backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.password__wrap {
+    display: flex;
+    justify-content: end;
+}
+
+.password__wrap img {
+    position: relative;
+    z-index: 3;
+}
+
+.date-of-birth__title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: #8B96B1;
+}
+
+.reg-form__header p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.reg-form__header a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #054EDB;
+    text-decoration: none;
+}
+
+.reg-form__wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.reg-last__wrap {
+    width: 100%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-last__wrap button {
+    padding: 11px 20px;
+    width: 315px;
+    height: 44px;
+    margin: 18px 0 20px;
+    background: #171717;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reg-last__wrap a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #8B96B1;
+    text-decoration: none;
+}
+
+.reg-last__wrap div {
+    width: 260px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #171717;
+    margin: 8px 0 0 0;
+}
+
+.date-of-birth {
+    width: 316px;
+}
+
+.day-of-birth__title,
+.year-of-birth__title,
+.day-of-birth,
+.year-of-birth {
+    width: 72px !important;
+}
+
+.month-of-birth__title,
+.month-of-birth {
+    width: 164px !important;
+}
+
+.date-of-birth__wrap {
+    column-gap: 4px;
+    position: relative;
+    bottom: 0;
+}
+
+.show-favorite__sports {
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+}
+
+.favorite__sports button {
+    padding: 8px 16px;
+    width: 276px;
+    height: 32px;
+    background: #171717;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.reg-checkbox__wrap label {
+    width: 20px !important;
+    height: 20px !important;
+    left: 3px !important;
+
+    &::after {
+        top: 3px !important;
+        left: 2px !important;
+    }
+}

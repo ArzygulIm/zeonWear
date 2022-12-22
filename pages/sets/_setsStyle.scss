@@ -1,0 +1,49 @@
+.sets {
+    .filters{
+        height: 280px;
+    }
+    padding-bottom: 32px;
+    &__wrap {
+        column-gap: 24px;
+    }
+
+    &__main__wrap {
+        width: 1496px;
+        row-gap: 24px;
+    }
+
+    &__header {
+        width: 1496px;
+        height: 218px;
+        position: relative;
+        border-radius: 16px;
+        background-image: url("../../images/setsHeader.png");
+
+        &__back {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: #242424;
+            mix-blend-mode: color;
+            border-radius: 16px;
+        }
+
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 125%;
+            letter-spacing: 0.355em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 236px;
+            margin-right: 132px;
+        }
+    }
+
+    .section__box{
+        height: 434px;
+    }
+}
