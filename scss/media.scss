@@ -2,18 +2,55 @@
 @import "footerMedia";
 
 @media(max-width:1900px) {
-    body{
-        overflow-x: hidden;
-    }
     .container {
         width: 80%;
     }
 }
 
 @media(max-width:1500px) {
-
     .footer__wrap {
         width: 100%;
+        gap: 10%;
+    }
+}
+
+@media(max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media(max-width:900px) {
+    .footer__wrap {
+       flex-wrap: wrap;
+       height: 500px;
     }
 
+    .footer-contacts__wrap,
+    .footer-partners__wrap,
+    .footer-about__wrap,
+    .footer-developers__wrap{
+        width: 45%;
+    }
+}
+@media(max-width:600px) {
+    .footer__wrap {
+       height: 650px;
+       row-gap: 30px;
+    }
+
+    .footer-contacts__wrap,
+    .footer-partners__wrap,
+    .footer-about__wrap,
+    .footer-developers__wrap{
+        width: 100%;
+        gap: 15px;
+        height: fit-content;
+    }
+}
+
+@media(max-width:320px) {
+    .container{
+        width: 280px;
+    }
 }

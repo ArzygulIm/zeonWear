@@ -4,55 +4,59 @@
 
 .main-carousel {
     &__carousel {
-        margin-bottom: 16px;
-        width: 100%;
-        height: 100%;
-
-        &__wrap {
+        &__items {
             width: 1574px;
-        }
-
-        &__prevBtn,
-        &__nextBtn {
-            border: none;
-            background: transparent;
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        &__prevBtn {
-            margin-right: 36px;
-        }
-
-        &__nextBtn {
-            margin-left: 36px;
-        }
-
-        &__list {
-            list-style: none;
             position: relative;
-            width: 100%;
+            user-select: none;
             height: 466px;
+            transition: all 300ms ease-in-out;
+            margin-bottom: 16px;
+
+            .main-button-container {
+                position: absolute;
+                width: 100%;
+                z-index: 5;
+
+                button {
+                    border: none;
+                    background: transparent;
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+                    position: absolute;
+                    top: -6px;
+
+                    &:nth-child(1) {
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        right: 0;
+                    }
+                }
+            }
         }
+
+
 
         &__item:first-child {
-            background-image: url("../images/Rectangle\ 772.png");
+            background-image: url("../images/main/Rectangle\ 772\ \(2\).png");
         }
 
         &__item:nth-child(2) {
-            background-image: url("../images/Rectangle\ 772\ \(1\).png");
+            background-image: url("../images/main/Rectangle\ 772\ \(3\).png");
         }
 
         &__item:nth-child(3) {
-            background-image: url("../images/Rectangle\ 772\ \(2\).png");
+            background-image: url("../images/main/Rectangle\ 772\ \(4\).png");
         }
 
         &__item:nth-child(4) {
-            background-image: url("../images/Rectangle\ 772\ \(3\).png");
+            background-image: url("../images/main/Rectangle\ 772.png");
         }
 
         &__item:nth-child(5) {
-            background-image: url("../images/Rectangle\ 772\ \(4\).png");
+            background-image: url("../images/main/Rectangle\ 772\ \(1\).png");
         }
 
         &__item {
@@ -63,33 +67,44 @@
             width: 292px;
             height: 466px;
             position: absolute;
-            transition: all .3s ease-in;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+            transition: all 300ms ease-in-out;
+            z-index: -1;
+            opacity: 0;
             background-repeat: no-repeat;
             background-size: 292px 466px;
             cursor: pointer;
 
-            &[data-pos="0"] {
-                z-index: 5;
+            &.active {
+                opacity: 1;
+                z-index: 99;
+                box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
             }
 
-            &[data-pos="-1"] {
-                transform: translateX(calc(-100% - 24px));
-                z-index: 4;
+            &.prev {
+                z-index: 2;
+                opacity: 1;
+                transform: translateX(calc(-150% - 24px));
             }
 
-            &[data-pos="1"] {
-                transform: translateX(calc(100% + 24px));
-                z-index: 4;
+            &.next {
+                z-index: 2;
+                opacity: 1;
+                transform: translateX(calc(50% + 24px));
             }
 
-            &[data-pos="-2"] {
-                transform: translateX(calc(-200% - 28px)) scale(.85);
-                z-index: 3;
+            &.prevPrev {
+                z-index: 1;
+                opacity: 1;
+                transform: translateX(calc(-250% - 25px)) scale(0.85);
             }
 
-            &[data-pos="2"] {
-                transform: translateX(calc(200% + 25px)) scale(.85);
-                z-index: 3;
+            &.nextNext {
+                z-index: 1;
+                opacity: 1;
+                transform: translateX(calc(150% + 28px)) scale(0.85);
             }
 
             &-back {
@@ -160,76 +175,74 @@
 }
 
 .logo-carousel {
-    &__container {
-        width: 1917px;
-    }
-
     &__carousel {
-        margin-bottom: 24px;
-        width: 100%;
-        height: 100%;
-
-        &__wrap {
+        &__items {
             width: 1090px;
-        }
-
-        &__prevBtn,
-        &__nextBtn {
-            border: none;
-            background: transparent;
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        &__prevBtn {
-            margin-right: 93px;
-        }
-
-        &__nextBtn {
-            margin-left: 88px;
-        }
-
-        &__list {
-            list-style: none;
-            position: relative;
-            width: 100%;
             height: 32px;
+            margin-bottom: 24px;
+            position: relative;
+            user-select: none;
+            transition: all 300ms ease-in-out;
+
+            .logo-button-container {
+                position: absolute;
+                width: 100%;
+                z-index: 5;
+
+                button {
+                    border: none;
+                    background: transparent;
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+                    position: absolute;
+                    top: -11px;
+
+                    &:nth-child(1) {
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        right: 0;
+                    }
+                }
+            }
         }
 
         &__item:nth-child(1) {
             /* width: 87.11px; */
-            background-image: url("../images/Joma_Sport.png");
+            background-image: url("../images/main/Joma_Sport.png");
             // background-size: 87.11px 32px;
         }
 
         &__item:nth-child(2) {
             /* width: 65.78px; */
             /* filter: blur(4px); */
-            background-image: url("../images/Puma_logo\ 1.png");
+            background-image: url("../images/main/Puma_logo\ 1.png");
         }
 
         &__item:nth-child(3) {
             /* width: 48px; */
             /* filter: blur(4px); */
-            background-image: url("../images/Adidas_Logo.png");
+            background-image: url("../images/main/Adidas_Logo.png");
         }
 
         &__item:nth-child(4) {
             /* width: 85.33px; */
             /* filter: blur(4px); */
-            background-image: url("../images/Asics_Logo.png");
+            background-image: url("../images/main/Asics_Logo.png");
         }
 
         &__item:nth-child(5) {
             /* width: 64px; */
             /* filter: blur(4px); */
-            background-image: url("../images/Reebok_2019_logo.png");
+            background-image: url("../images/main/Reebok_2019_logo.png");
         }
 
         &__item:nth-child(6) {
             /* width: 81.78px; */
             /* filter: blur(4px); */
-            background-image: url("../images/Logo_NIKE\ 1.png");
+            background-image: url("../images/main/Logo_NIKE\ 1.png");
         }
 
         &__item {
@@ -238,34 +251,35 @@
             justify-content: center;
             position: absolute;
             transition: all .3s ease-in;
-            height: 100%;
+            transform: translateX(-50%);
+            height: 32px;
             width: 100px;
             background-repeat: no-repeat;
             background-position: center;
             cursor: pointer;
 
-            &[data-pos="0"] {
-                transform: translateX(calc(-250% - 139px));
+            &.logo-first {
+                transform: translateX(calc(50% + 59px));
             }
 
-            &[data-pos="1"] {
-                transform: translateX(calc(-150% - 78px));
+            &.logo-second {
+                transform: translateX(calc(200% + 69px));
             }
 
-            &[data-pos="2"] {
-                transform: translateX(calc(-50% - 38px));
+            &.logo-third {
+                transform: translateX(calc(350% + 63px));
             }
 
-            &[data-pos="3"] {
-                transform: translateX(calc(50% + 17px));
+            &.logo-fourth {
+                transform: translateX(calc(500% + 63px));
             }
 
-            &[data-pos="4"] {
-                transform: translateX(calc(150% + 78px));
+            &.logo-fifth {
+                transform: translateX(calc(650% + 78px));
             }
 
-            &[data-pos="5"] {
-                transform: translateX(calc(250% + 136px));
+            &.logo-sixth {
+                transform: translateX(calc(800% + 87px));
             }
 
             &-back {

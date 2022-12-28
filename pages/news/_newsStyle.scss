@@ -1,3 +1,7 @@
+#news{
+    padding: 0px 0px 32px;
+}
+
 .news {
     &__wrap {
         column-gap: 24px;
@@ -9,6 +13,27 @@
         padding: 34px 32px;
         background: #FFFFFF;
         border-radius: 16px;
+
+        &__header {
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 125%;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #171717;
+            }
+
+            p {
+                margin: 12px 0 32px;
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #98949E;
+                }
+            }
+        }
 
         &__box {
             padding: 16px;
@@ -41,8 +66,74 @@
             }
         }
 
-        &__wrap{
+        &__wrap {
             column-gap: 32px;
+        }
+
+    }
+
+    &__second__box {
+        h6 {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 150%;
+            color: #171717;
+            margin: 12px 0 8px;
+        }
+
+        .news__second__box__date {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 125%;
+            color: #8B96B1;
+        }
+
+        .news__second__box__text {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 150%;
+            color: #171717;
+
+        }
+    }
+
+    &-pagination {
+        &__wrap {
+            width: 100%;
+            margin: 45px 0;
+
+            button {
+                width: 40px;
+                height: 40px;
+                background: #054EDB;
+                border: 1px solid #EAF1FF;
+                border-radius: 10px;
+                margin-left: 4px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 100%;
+                text-align: center;
+                color: #8B96B1;
+                margin: 0 14px;
+            }
+
+            div {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #EAF1FF;
+                border-radius: 8px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 100%;
+                    color: #054EDB;
+                }
+            }
         }
     }
 }

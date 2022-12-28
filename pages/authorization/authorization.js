@@ -16,13 +16,6 @@ document.getElementById("sign-in__btn").addEventListener('click', (e) => {
             password: authPasswordInput.value
         }
         console.log(data)
-        authMailInput.value = ""
-        authPasswordInput.value = ""
-        document.getElementById("auth-mail__label").style.transform = "translate(0, 0)"
-        document.getElementById("auth-password__label").style.transform = "translate(0, 0)"
-        setTimeout(() => {
-            window.location.href = '../../index.html'
-        }, 2000)
     }
 })
 

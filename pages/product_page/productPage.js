@@ -39,13 +39,13 @@ const productImgCarousel = () => {
 productImgCarousel()
 
 const productBoxImg = document.querySelectorAll(".product__box-img")
-productBoxImg.forEach(el =>{
-    el.addEventListener('click',()=>{
-    document.getElementById("product-img-full").style.display = "block"
-    document.body.classList.toggle('hidden')
+productBoxImg.forEach(el => {
+    el.addEventListener('click', () => {
+        document.getElementById("product-img-full").style.display = "block"
+        document.body.classList.toggle('hidden')
+    })
 })
-})
-document.getElementById("close__full").addEventListener('click',()=>{
+document.getElementById("close__full").addEventListener('click', () => {
     document.getElementById("product-img-full").style.display = "none"
     document.body.classList.remove('hidden')
 })
@@ -70,10 +70,18 @@ closeModalBtn.addEventListener('click', () => {
 backdrop.addEventListener('click', () => {
     toggleModal()
 })
- document.getElementById("add_to_cart").addEventListener("click",()=>{
+document.getElementById("add_to_cart").addEventListener("click", () => {
     document.querySelector(".added-to-cart__wrap").classList.add('flex')
 
     setTimeout(() => {
         document.querySelector(".added-to-cart__wrap").classList.remove('flex')
     }, 2000)
- })
+})
+
+// Получить значение из sessionStorage
+var data = sessionStorage.getItem('productId');
+console.log(data)
+// // Удалить значение из sessionStorage
+// sessionStorage.removeItem('key');
+// // Очистить
+// sessionStorage.clear();

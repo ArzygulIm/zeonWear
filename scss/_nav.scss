@@ -3,7 +3,6 @@
 }
 
 .main__nav {
-
     &__form {
 
         padding: 10px 16px;
@@ -23,8 +22,8 @@
             background: transparent;
             border: none;
             cursor: pointer;
+            margin-right: 12px;
         }
-
     }
 
     &__wrap {
@@ -376,6 +375,7 @@
 
 
 .main__nav__cart__wrap:hover {
+
     .dropdown__cart,
     .dropdown__cart:hover {
         z-index: 7;
