@@ -10,7 +10,6 @@
     align-items: flex-start;
     padding: 32px 32px 48px;
     width: 1032px;
-    height: 2202px;
     background: #FFFFFF;
     border-radius: 16px;
 }
@@ -434,4 +433,22 @@
 
 .product__box-img {
     cursor: pointer;
+
+    img {
+        width: 480px;
+        height: 480px;
+        border-radius: 16px;
+    }
+}
+
+.fa-star:before {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.product__color__img {
+    width: 66px;
+    height: 66px;
+    border-radius: 8px;
 }

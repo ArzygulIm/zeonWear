@@ -33,41 +33,13 @@
 }
 
 .product-img-carousel__item {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: absolute;
     transition: all .3s ease-in;
     width: 1016px;
     height: 1016px;
     border-radius: 16px;
-}
-
-.product-img-carousel__item:first-child {
-    background-image: url("../../images/20200902_174605_1.png");
-    background-size: 1016px 1016px;
-}
-
-.product-img-carousel__item:nth-child(2) {
-    background-image: url("../../images/20200902_174609_3.png");
-    background-size: 1016px 1016px;
-}
-
-.product-img-carousel__item:nth-child(3) {
-    background-image: url("../../images/20200902_174611_4.png");
-    background-size: 1016px 1016px;
-}
-
-.product-img-carousel__item:nth-child(4) {
-    background-image: url("../../images/20200902_174611_4.png");
-    background-size: 1016px 1016px;
-}
-
-.product-img-carousel__item:nth-child(5) {
-    background-image: url("../../images/20200902_174611_4.png");
-    background-size: 1016px 1016px;
-}
-
-.product-img-carousel__item:nth-child(6) {
-    background-image: url("../../images/20200902_174611_4.png");
-    background-size: 1016px 1016px;
 }
 
 .product-img-carousel__item[data-pos="0"] {

@@ -313,64 +313,38 @@ const washingtonRef = doc(db, "users", "arzygul@mail.ru");
 //     }
 // ]
 
-let productsDetails = {
-    name: "кроссовки Zeon Wear 1",
+let productDetails = {
+    name: "Футболка Zeon Wear 1",
     model: "TORS2102IN",
-    id: "zeonWear1",
+    id: "zeonWear7",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget elit odio tortor hac at eget ac volutpat convallis. Pretium id sociis donec dui praesent. Netus eleifend cursus odio semper ac pharetra. Malesuada tristique nulla augue aliquam. Amet, volutpat nisl et scelerisque ut egestas eget",
-    materials: {
-        top: "полимер, текстиль",
-        inner: "текстиль",
-        sole: "искусственный материал, резина",
-        slipsole: "текстиль"
-    },
-    season: "мульти",
-    kindOfSport: "бег",
-    manufacturer: "Камбоджа",
-    clasp: "шнурки",
+    materials: "текстиль",
+    season: "лето",
+    kindOfSport: "мини футбол",
+    manufacturer: "Франция",
     articule: 'AS455AMKBWJ7',
     images: [
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200902_174605_1.png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200902_174609_3.png",
-        ""
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
     ],
-    comments: [
-
-    ],
+    comments: [],
     colorsImages: [
         {
-            value: "1",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200707_123825_dris2102in_2(1).png"
-        },
-        {
-            value: "2",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200707_123825_dris2102in_2.png"
-        },
-        {
-            value: "3",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200710_110201_dris2109in_2.png"
-        },
-        {
-            value: "4",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200710_110248_dris2108in_2(1).png"
-        },
-        {
-            value: "5",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/20200710_110248_dris2108in_2.png"
-        },
-        {
-            value: "6",
-            url: ""
+            value: "yellow",
+            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
         }
     ]
 }
 
-// console.log(products)
-// const regProducts = async (data) => {
-//     await setDoc(doc(db, "products", "men"), {products});
-//     console.log("products created")
-// }
-// regProducts(products)
+const addProductDetails = async (data) => {
+    await setDoc(doc(db, "product", productDetails.id), productDetails);
+    console.log("product created")
+}
+addProductDetails()
 
 // document with generated ID
 // const docRef = await addDoc(collection(db, "cities"), {

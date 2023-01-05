@@ -148,7 +148,6 @@ const getAllProducts = async () => {
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-        console.log(docSnap.data().products);
         renderAllProducts(docSnap.data().products)
     } else {
         console.log("No such document!");
@@ -158,27 +157,8 @@ getAllProducts()
 
 const renderAllProducts = (data) => {
     if (data) {
+        console.log(data)
         const row = document.querySelector(".output")
-
-
-        // < div class="col-3" >
-        //     <a href="../product_page/productPage.html" class="section__box men__box">
-        //         <div class="favorite-wrap">
-        //             <span class="section__new">NEW</span>
-        //             <img src="../../images/VectorHeart.png" alt="">
-        //         </div>
-        //         <img class="section__box-img" src="../../images/Rectangle44.png" alt="">
-        //             <div class="section__box-text">
-        //                 <h5>Top Flex</h5>
-        //                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-        //                 <div>
-        //                     <h6>12 980 ₽</h6>
-        //                     <h6>11 033 ₽</h6>
-        //                 </div>
-        //             </div>
-        //     </a>
-        //             </div >
-
         data?.forEach(el => {
             const col = document.createElement("div")
             const box = document.createElement("div")
@@ -188,7 +168,7 @@ const renderAllProducts = (data) => {
             const boxImg = document.createElement("img")
             const boxTextWrap = document.createElement("div")
             newSpan.textContent = el.isNew ? "NEW" : ""
-            favoriteImg.src = "../../images/VectorHeart.png"
+            favoriteImg.src = "../../images/global/VectorHeart.png"
             boxImg.src = el.img
             boxTextWrap.innerHTML = `
             <h5>${el.name}</h5>
@@ -213,11 +193,9 @@ const renderAllProducts = (data) => {
             row.append(col)
 
             box.addEventListener('click', () => {
-                // Сохранить значение в sessionStorage
                 sessionStorage.setItem('productId', el.id);
                 window.location.href = "../product_page/productPage.html"
             })
-
         })
     }
 }

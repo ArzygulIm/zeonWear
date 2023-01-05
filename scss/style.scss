@@ -5,6 +5,12 @@
 @import "sectionBox";
 @import "sectionFilters";
 @import "inputLabel";
+@import "flexBox";
+@import "variables";
+@import "animations";
+@import "global";
+@import "modal";
+@import "burger";
 
 @import "../pages/authorization/authStyle";
 
@@ -33,13 +39,6 @@
 
 @import "../pages/news/newsStyle";
 
-@import "flexBox";
-@import "variables";
-@import "animations";
-@import "global";
-@import "modal";
-@import "burger";
-
 .logo {
     margin: 64px;
 
@@ -54,4 +53,10 @@
         font-size: 20px;
         line-height: 24px;
     }
+}
+
+.show-div {
+    transform: translateY(0%) scaleY(1) !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
 }

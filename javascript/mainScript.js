@@ -13,7 +13,7 @@ const mainCarousel = () => {
 
     document.querySelector(".main-carousel__carousel__wrap").addEventListener('touchstart', e => {
         touchstartX = e.changedTouches[0].screenX
-    })
+    }, { passive: true })
 
     document.querySelector(".main-carousel__carousel__wrap").addEventListener('touchend', e => {
         touchendX = e.changedTouches[0].screenX
@@ -102,7 +102,7 @@ const logoCarousel = () => {
 
     document.querySelector(".logo-carousel__carousel__wrap").addEventListener('touchstart', e => {
         touchstartX = e.changedTouches[0].screenX
-    })
+    }, { passive: true })
 
     document.querySelector(".logo-carousel__carousel__wrap").addEventListener('touchend', e => {
         touchendX = e.changedTouches[0].screenX
