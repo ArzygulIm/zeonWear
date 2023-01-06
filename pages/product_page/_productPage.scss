@@ -153,7 +153,7 @@
     color: #8B96B1;
 }
 
-.product__price__wrap div:nth-child(2) {
+.product__price__wrap div .productPrice {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -161,10 +161,9 @@
     line-height: 150%;
     color: #171717;
     padding: 0 10px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.product__price__wrap div:nth-child(3) {
+.product__price__wrap div .productOldPrice {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -173,10 +172,10 @@
     text-decoration-line: line-through;
     color: #8B96B1;
     padding: 0 10px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.product__price__wrap div:last-child {
+.product__price__wrap div .productSale {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -184,6 +183,7 @@
     line-height: 150%;
     color: #8B96B1;
     padding: 0 0 0 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .product__buttons__wrap {
@@ -423,7 +423,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 6;
-    background-color: #000000;
+    background: #F6F6F6;
     display: none;
 }
 

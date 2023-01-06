@@ -87,13 +87,41 @@ const renderProductDetails = (data) => {
             imgRow.append(col6)
 
             const li = document.createElement('li')
-            li.className = "product-img-carousel__item"
-            li.style.backgroundImage = `url(${el})`
-            li.dataset.pos = index
-            document.querySelector(".product-img-carousel__list").append(li)
-            
-        })
+            li.className = index == 0 ? "product-img-carousel__item product-full-first" : index == 1 ? "product-img-carousel__item product-full-second" : "product-img-carousel__item"
+            li.innerHTML = `<img src=${el} alt="">`;
+            document.querySelector(".product-img-carousel__list").append(li);
 
+
+        })
+        const productCarousel = () => {
+            const slides = document.querySelectorAll(".product-img-carousel__item");
+
+            let first = 0
+            let second = first + 1
+
+            const gotoPrev = () => first > 0 ? gotoNum(first - 1) : gotoNum(slides.length - 1);
+
+            const gotoNext = () => first < slides.length - 1 ? gotoNum(first + 1) : gotoNum(0);
+
+            document.querySelector(".product-img-carousel__prevBtn").addEventListener('click', gotoPrev)
+            document.querySelector(".product-img-carousel__nextBtn").addEventListener('click', gotoNext)
+
+            const gotoNum = number => {
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("product-full-first");
+                    slides[i].classList.remove("product-full-second");
+                }
+                console.log(number)
+                first = number;
+                second = first + 1
+                if (first == slides.length - 1) {
+                    second = 0
+                }
+                slides[first].classList.add("product-full-first");
+                slides[second].classList.add("product-full-second");
+            }
+        }
+        productCarousel()
         document.querySelector(".product__box__text__first").innerHTML = `
         <h5>Описание</h5>
         <p>${data.description}</p>
@@ -271,7 +299,26 @@ const renderProductDetails = (data) => {
                     document.querySelector(".product__color").append(colorImg)
                 }
             })
+        }
+        if (data.price) {
+            const price = document.createElement("div")
+            price.className = "productPrice"
+            price.textContent = data.price
+            document.querySelector(".productPriceWrap").append(price)
+        }
 
+        if(data.oldPrice){
+            const price = document.createElement("div")
+            price.className = "productOldPrice"
+            price.textContent = data.oldPrice
+            document.querySelector(".productPriceWrap").append(price)
+        }
+
+        if(data.sale){
+            const sale = document.createElement("div")
+            sale.className = "productSale"
+            sale.textContent = data.sale
+            document.querySelector(".productPriceWrap").append(sale)
         }
 
     }

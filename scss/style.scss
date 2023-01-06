@@ -5,7 +5,6 @@
 @import "sectionBox";
 @import "sectionFilters";
 @import "inputLabel";
-@import "flexBox";
 @import "variables";
 @import "animations";
 @import "global";
@@ -39,8 +38,11 @@
 
 @import "../pages/news/newsStyle";
 
+@import "flexBox";
+
 .logo {
-    margin: 64px;
+    margin: 64px 0 0 64px;
+    width: 245px;
 
     h2 {
         font-weight: 575;

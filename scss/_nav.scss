@@ -157,6 +157,10 @@
         cursor: pointer;
 
         &:hover {
+            svg path{
+                fill: #054EDB;
+            }
+
             background: #F6F9FF;
         }
 
@@ -170,11 +174,15 @@
             line-height: 17px;
             color: #171717;
 
-            img {
+            svg {
                 margin-right: 16px;
                 object-fit: contain;
                 width: 20px;
                 height: 20px;
+
+                path{
+                    transition: .3s;
+                }
             }
         }
     }

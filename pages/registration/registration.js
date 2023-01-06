@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
+import { getFirestore, doc, setDoc, collection, getDocs, getDoc, getDocFromCache } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyBOC9RuMcJL3fMmQ-2-XPdcCOXs7TSulKI",
@@ -10,20 +10,9 @@ const firebaseConfig = {
     appId: "1:683663662272:web:889183c1d3824f21b22125",
     databaseURL: "https://DATABASE_NAME.firebaseio.com"
 };
+
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
-import { doc, setDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
-
-const regUsers = async () => {
-    const querySnapshot = await getDocs(collection(db, "users"));
-    let counter = 0
-    querySnapshot.forEach((doc) => {
-        console.log(doc.data());
-        counter++
-    });
-    console.log(counter)
-}
-regUsers()
 
 let favoriteSportsObject = {}
 let data = {}
@@ -63,10 +52,10 @@ document.getElementById("close__favorite-sports").addEventListener('click', (e) 
 
     document.querySelector(".favorite__sports-title").innerHTML = favoriteSportsArray.length > 0 ? `
         <p class="favorite__sports-title__p">${favSports}</p>
-        <img src="../../images/Polygon2.png" alt="">
+        <img src="../../images/global/Polygon2.png" alt="">
     `: `
         <p class="favorite__sports-title__p">Любимые виды спорта</p>
-        <img src="../../images/Polygon2.png" alt="">
+        <img src="../../images/global/Polygon2.png" alt="">
     `
 
     document.querySelector(".favorite__sports").classList.remove("show-div")
@@ -142,11 +131,10 @@ document.querySelector(".auth__reg__backdrop").addEventListener('click', () => {
 
     document.querySelector(".favorite__sports-title").innerHTML = favoriteSportsArray.length > 0 ? `
         <p class="favorite__sports-title__p">${favSports}</p>
-        <img src="../../images/Polygon2.png" alt="">
-    `: `
-    
+        <img src="../../images/global/Polygon2.png" alt="">
+    `:`
         <p class="favorite__sports-title__p">Любимые виды спорта</p>
-        <img src="../../images/Polygon2.png" alt="">
+        <img src="../../images/global/Polygon2.png" alt="">
     `
     document.querySelector(".second-favorite__sports-title").style.transform = favoriteSportsArray.length > 0 ? "translate(-15px, -30px)" : "translate(0, 0)"
     document.querySelector(".gender__title").classList.remove("title__active")
@@ -164,22 +152,59 @@ document.querySelector(".auth__reg__backdrop").addEventListener('click', () => {
 
 document.getElementById("reg-submit").addEventListener('click', (e) => {
     e.preventDefault()
-    data.name = document.getElementById("reg-name").value
-    data.surname = document.getElementById("surname").value
-    data.gender = document.querySelector(".gender__title").innerHTML.length < 10 ? document.querySelector(".gender__title").innerHTML : null
-    data.date_of_birth = document.querySelector(".day-of-birth__title").innerHTML.length < 3 && document.querySelector(".month-of-birth__title").innerHTML.length < 15 && document.querySelector(".year-of-birth__title").innerHTML.length < 5 ? `${document.querySelector(".day-of-birth__title").innerHTML}.${document.querySelector(".month-of-birth__title").innerHTML}.${document.querySelector(".year-of-birth__title").innerHTML}` : null
-    data.city = document.getElementById("city").value
-    data.favorite_sports = favoriteSportsObject
-    data.password = document.getElementById("password").value === document.getElementById("repeat-password").value ? document.getElementById("password").value : { error: "Пароли не совпадают" }
-    data.mail = document.getElementById("e-mail").value
-    data.subscribe = document.getElementById("subscribe").checked
+    if (document.getElementById("password").value !== "" && document.getElementById("password").value === document.getElementById("repeat-password").value && document.getElementById("e-mail").value) {
+        data.name = document.getElementById("reg-name").value
+        data.surname = document.getElementById("surname").value
+        data.gender = document.querySelector(".gender__title").innerHTML.length < 10 ? document.querySelector(".gender__title").innerHTML : null
+        data.date_of_birth = document.querySelector(".day-of-birth__title").innerHTML.length < 3 && document.querySelector(".month-of-birth__title").innerHTML.length < 15 && document.querySelector(".year-of-birth__title").innerHTML.length < 5 ? `${document.querySelector(".day-of-birth__title").innerHTML}.${document.querySelector(".month-of-birth__title").innerHTML}.${document.querySelector(".year-of-birth__title").innerHTML}` : null
+        data.city = document.getElementById("city").value
+        data.favorite_sports = favoriteSportsObject
+        data.password = document.getElementById("password").value === document.getElementById("repeat-password").value ? document.getElementById("password").value : { error: "Пароли не совпадают" }
+        data.mail = document.getElementById("e-mail").value
+        data.subscribe = document.getElementById("subscribe").checked
 
-    regUser(data)
+
+        const checkUser = async (data) => {
+            const docRef = doc(db, "users", data);
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                document.querySelector(".reg-message").classList.add("flex")
+
+                document.querySelector(".reg-message").innerHTML = `
+                <h2>Ошибка</h2>
+                <div class="reg-messageWrap">
+                    Пользователь с таким адресом уже существует, войдите или попробуйте восстановить пароль
+                </div>
+                <a href="">Восстановить пароль</a>`
+            } else {
+                regUser(data)
+            }
+        }
+        checkUser(document.getElementById("e-mail").value)
+    } else if (document.getElementById("password").value !== "" && document.getElementById("password").value !== document.getElementById("repeat-password").value) {
+        document.querySelector(".reg-message").classList.add("flex")
+        document.querySelector(".reg-message").innerHTML = `
+        <h2>Ошибка</h2>
+        <div class="reg-messageWrap">
+            Пароли не совпадают
+        </div>`
+    }
 })
 
 const regUser = async (data) => {
     await setDoc(doc(db, "users", document.getElementById("e-mail").value), data);
 }
+
+const hideMessageWrap = () => {
+    document.querySelector(".reg-message").classList.remove("flex")
+    document.querySelector(".reg-message").innerHTML = ""
+}
+
+document.querySelectorAll("input").forEach(el => {
+    el.addEventListener('focus', hideMessageWrap)
+})
+document.querySelector(".gender__title").addEventListener('click', hideMessageWrap)
 
 import { updateDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
@@ -191,6 +216,14 @@ const washingtonRef = doc(db, "users", "arzygul@mail.ru");
 //     });
 // }
 // updateUser()
+
+// const regUsers = async () => {
+//     const querySnapshot = await getDocs(collection(db, "users"));
+//     querySnapshot.forEach((doc) => {
+//         console.log(doc.data());
+//     });
+// }
+// regUsers()
 
 // let products = [
 //     {
@@ -313,38 +346,38 @@ const washingtonRef = doc(db, "users", "arzygul@mail.ru");
 //     }
 // ]
 
-let productDetails = {
-    name: "Футболка Zeon Wear 1",
-    model: "TORS2102IN",
-    id: "zeonWear7",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget elit odio tortor hac at eget ac volutpat convallis. Pretium id sociis donec dui praesent. Netus eleifend cursus odio semper ac pharetra. Malesuada tristique nulla augue aliquam. Amet, volutpat nisl et scelerisque ut egestas eget",
-    materials: "текстиль",
-    season: "лето",
-    kindOfSport: "мини футбол",
-    manufacturer: "Франция",
-    articule: 'AS455AMKBWJ7',
-    images: [
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
-        "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
-    ],
-    comments: [],
-    colorsImages: [
-        {
-            value: "yellow",
-            url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
-        }
-    ]
-}
+// let productDetails = {
+//     name: "Футболка Zeon Wear 1",
+//     model: "TORS2102IN",
+//     id: "zeonWear7",
+//     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget elit odio tortor hac at eget ac volutpat convallis. Pretium id sociis donec dui praesent. Netus eleifend cursus odio semper ac pharetra. Malesuada tristique nulla augue aliquam. Amet, volutpat nisl et scelerisque ut egestas eget",
+//     materials: "текстиль",
+//     season: "лето",
+//     kindOfSport: "мини футбол",
+//     manufacturer: "Франция",
+//     articule: 'AS455AMKBWJ7',
+//     images: [
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png",
+//         "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
+//     ],
+//     comments: [],
+//     colorsImages: [
+//         {
+//             value: "yellow",
+//             url: "https://raw.githubusercontent.com/ArzygulIm/zeonWear/master/images/products/images/Rectangle44(1).png"
+//         }
+//     ]
+// }
 
-const addProductDetails = async (data) => {
-    await setDoc(doc(db, "product", productDetails.id), productDetails);
-    console.log("product created")
-}
-addProductDetails()
+// const addProductDetails = async (data) => {
+//     await setDoc(doc(db, "product", productDetails.id), productDetails);
+//     console.log("product created")
+// }
+// addProductDetails()
 
 // document with generated ID
 // const docRef = await addDoc(collection(db, "cities"), {
