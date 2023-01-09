@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
-    <link rel="icon" href="../../images/Slice3.png" type="image/png">
+    <link rel="icon" href="../../images/global/Slice3.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="reg-message">
-
+                    
                 </div>
 
                 <form action="#" class="reg__form">
@@ -396,8 +396,8 @@
         <div class="container">
             <div class="main__nav__wrap flex flex-ai-c flex-jc-sb">
                 <div class="main__nav__form flex flex-ai-c">
-                    <button><img src="../../images/global/Vector(Stroke)2.png" alt=""></button>
-                    <input type="text" placeholder="Поиск">
+                    <button id="searchBtn"><img src="../../images/global/Vector(Stroke)2.png" alt=""></button>
+                    <input type="text" placeholder="Поиск" id="searchInput">
                 </div>
                 <div class="main__nav__items-wrap flex flex-ai-c">
                     <a href="" class="main__nav__items">Новинки</a>
@@ -513,8 +513,7 @@
                                             <p>15%</p>
                                         </div>
                                     </div> -->
-
-                                    <a href="../../pages/cart/cart.html">Перейти в корзину</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -522,13 +521,13 @@
 
                     <div class="main__nav__log-in__wrap">
                         <div class="main__nav__icon main__nav__log-in">
-                            <a href="../../pages/authorization/authorization.html">
+                            <a href="#">
                                 <img id="login-img" src="../../images/global/log-in.png" alt="">
                             </a>
 
                             <div class="dropdown">
                                 <div>
-                                    <a href="../../pages/profile/profile.html">
+                                    <a href="../profile/profile.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_8525_3583)">
@@ -549,7 +548,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="#">
+                                    <a href="../news/news.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_8525_3592)">
@@ -567,7 +566,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="#">
+                                    <a href="../favorites/favorites.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_8525_3598)">
@@ -585,7 +584,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="../../pages/special_offers/specialOffers.html">
+                                    <a href="../special_offers/specialOffers.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_8525_3603)">
@@ -603,7 +602,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="#">
+                                    <a href="../order_history/orderHistory.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_8525_3608)">
@@ -627,7 +626,7 @@
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="#">
+                                    <a href="../help/help.html">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -647,6 +646,7 @@
     </section>
 
     <script type="module" src="./registration.js"></script>
+    <script type="module" src="../../javascript/navScript.js"></script>
     <script src="../../javascript/inputScript.js"></script>
 </body>
 

@@ -132,7 +132,7 @@ document.querySelector(".auth__reg__backdrop").addEventListener('click', () => {
     document.querySelector(".favorite__sports-title").innerHTML = favoriteSportsArray.length > 0 ? `
         <p class="favorite__sports-title__p">${favSports}</p>
         <img src="../../images/global/Polygon2.png" alt="">
-    `:`
+    `: `
         <p class="favorite__sports-title__p">Любимые виды спорта</p>
         <img src="../../images/global/Polygon2.png" alt="">
     `
@@ -162,10 +162,11 @@ document.getElementById("reg-submit").addEventListener('click', (e) => {
         data.password = document.getElementById("password").value === document.getElementById("repeat-password").value ? document.getElementById("password").value : { error: "Пароли не совпадают" }
         data.mail = document.getElementById("e-mail").value
         data.subscribe = document.getElementById("subscribe").checked
+        data.cart = []
+        data.orderHistory = []
 
-
-        const checkUser = async (data) => {
-            const docRef = doc(db, "users", data);
+        const checkUser = async (mail) => {
+            const docRef = doc(db, "users", mail);
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
@@ -176,9 +177,14 @@ document.getElementById("reg-submit").addEventListener('click', (e) => {
                 <div class="reg-messageWrap">
                     Пользователь с таким адресом уже существует, войдите или попробуйте восстановить пароль
                 </div>
-                <a href="">Восстановить пароль</a>`
+                <a class="messageLink" href="../authorization/authorization.html">Восстановить пароль</a>`
+
+                document.querySelector(".messageLink").addEventListener('click', () => {
+                    sessionStorage.setItem('e-mail', mail);
+                })
             } else {
                 regUser(data)
+                localStorage.setItem('userId', JSON.stringify(data.mail))
             }
         }
         checkUser(document.getElementById("e-mail").value)
@@ -208,7 +214,8 @@ document.querySelector(".gender__title").addEventListener('click', hideMessageWr
 
 import { updateDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
-const washingtonRef = doc(db, "users", "arzygul@mail.ru");
+
+// const washingtonRef = doc(db, "users", "arzygul@mail.ru");
 
 // const updateUser = async (data) => {
 //     await updateDoc(washingtonRef, {

@@ -217,7 +217,6 @@
   align-items: flex-start;
   padding: 24px 16px;
   width: 416px;
-  height: 747px;
   background: #FFFFFF;
   box-shadow: 0px -10px 38px -4px rgba(0, 0, 0, 0.06);
   border-radius: 24px;
@@ -319,6 +318,9 @@
   text-align: center;
   color: #FFFFFF;
   text-decoration: none;
+}
+.dropdown__cart__buttons__message {
+  padding-bottom: 20px;
 }
 
 .main__nav__items__dropdown {
@@ -1407,7 +1409,7 @@ td {
 .auth__wrap {
   width: 1856px;
   height: 873px;
-  background: url("../../images/image 2.png");
+  background: url("../../images/auth-reg/image 2.png");
   border-radius: 24px;
   display: flex;
   justify-content: space-between;
